@@ -1,0 +1,17 @@
+---
+import Filigram from "./filigram/Filigram.astro"
+import ProjectCarousel from "./Carousel"
+---
+<section >
+    <Filigram/>
+    <div class="w-full max-w-screen-xl mx-auto my-10 p-6 sm:p-10 md:p-16 lg:p-20 text-xl sm:text-2xl">
+      <h2 class="bg-[#85282b] inline-block px-4 py-2 text-white text-2xl sm:text-3xl md:text-4xl font-medium font-['Crimson-Pro']">
+      Projects
+      </h2>
+
+      <div class="mt-6">
+            <ProjectCarousel client:load />
+      </div>
+      </div>
+    <Filigram/>
+</section>  
