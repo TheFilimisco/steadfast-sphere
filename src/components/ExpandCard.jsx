@@ -48,7 +48,7 @@ export default function ExpandCard({
           >
             <div className="flex flex-col gap-3 sm:flex-row ">
               {skills.map((skill) => (
-                <p className="px-2 py-1 sm:px-4 sm:py-3 bg-[#85282b] text-white rounded-lg hover:bg-[#5a1618] text-sm sm:text-base">
+                <p className="px-2 py-1 sm:px-4 sm:py-3 bg-[#85282b] text-white rounded-lg hover:bg-[#5a1618] text-sm sm:text-2xl">
                   {skill}
                 </p>
               ))}

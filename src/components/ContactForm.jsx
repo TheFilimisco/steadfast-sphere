@@ -55,7 +55,7 @@ export default function ContactForm() {
           type="text"
           name="name"
           defaultValue="Name"
-          className="w-full text-sm mt-1 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-[#85282b] bg-[#c0ad8c] font-['Crimson-Pro'] text-[#414040]"
+          className="w-full text-sm mt-1 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-[#85282b] bg-[#c0ad8c]  text-[#414040]"
         />
       </div>
 
@@ -65,7 +65,7 @@ export default function ContactForm() {
           type="email"
           name="email"
           defaultValue="Email"
-          className="text-sm mt-1 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-[#85282b] bg-[#c0ad8c] font-['Crimson-Pro'] text-[#414040]"
+          className="text-sm mt-1 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-[#85282b] bg-[#c0ad8c] text-[#414040]"
         />
       </div>
 
@@ -75,14 +75,14 @@ export default function ContactForm() {
           name="message"
           rows="4"
           defaultValue="Request"
-          className="text-base mt-4 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-[#85282b] bg-[#c0ad8c] font-['Crimson-Pro'] text-[#414040]"
+          className="text-base mt-4 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-[#85282b] bg-[#c0ad8c]  text-[#414040]"
         />
       </div>
       <motion.button
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         type="submit"
-        className="mx-auto w-full bg-[#85282b] text-white py-2 p- mt-4 font-['Crimson-Pro'] text-xl"
+        className="mx-auto w-full bg-[#85282b] text-white py-2 p- mt-4 text-xl"
       >
         Send
       </motion.button>

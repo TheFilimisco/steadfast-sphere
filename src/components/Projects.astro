@@ -1,6 +1,12 @@
 ---
 import Filigram from "./filigram/Filigram.astro"
 import ProjectCarousel from "./Carousel"
+
+import { getCollection } from "astro:content";
+
+const projects = await getCollection("projects");
+export const prerender = true
+
 ---
 <section >
     <Filigram/>
@@ -10,7 +16,7 @@ import ProjectCarousel from "./Carousel"
       </h2>
 
       <div class="mt-6">
-            <ProjectCarousel client:load />
+            <ProjectCarousel projects={projects} client:load />
       </div>
       </div>
     <Filigram/>
