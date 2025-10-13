@@ -8,6 +8,7 @@ const projects = defineCollection({
     color: z.string(),
     description: z.string(),
     backend: z.string(),
+    web: z.string().optional(),
     img: z.string(),
     frontend: z.string(),
     database: z.string(),

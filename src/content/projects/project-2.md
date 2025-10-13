@@ -1,12 +1,13 @@
 ---
 id: 2
-title: "Coming Soon"
-color: "#E8D4B1"
-description: "Coming"
-backend: "..."
-frontend: "..."
-database: "..."
-img: "project1.jpg"
-repository_frontend: "https://github.com/StephenDC-UwU/schedule_employee_next_js_.git"
-repository_backend: "https://github.com/StephenDC-UwU/calendar_employees.git"
+title: "SEGURFIRE PROTECCIÓN S.L"
+color: "#85282b"
+description: "This project is part of a comprehensive fire protection company"
+backend: ""
+frontend: "Astro + Tailwind"
+database: ""
+img: "project2.jpeg"
+repository_frontend: ""
+repository_backend: ""
+web: "https://segurfire-proteccion.vercel.app/"
 ---
