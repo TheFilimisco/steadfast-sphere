@@ -1,20 +1,40 @@
 // Idioma por defecto
-export const defaultLang = 'es';
+export const defaultLang = 'en';
 
 // Diccionarios de texto
 export const ui = {
   en: {
-    'nav.home': 'Home',
-    'nav.about': 'About',
-    'nav.projects': 'Projects',
-    'hero.title': "Hi, I'm [Tu Nombre]",
-    'hero.subtitle': 'Frontend Developer & Web Designer.',
+    //header
+    'header.title.span': 'Art',
+    'header.subtitle': 'is Everywhere',
+    'header.text':'Even on your',
+    'header.text.span':'website',
+    //about
+    'about.title':'Home',
+    'about.subtitle':'FullStack Developer and Artist',
+    'about.texto': `I'm a full-stack developer with an artistic twist. I love bringing websites and mobile apps to life with style. I'm into databases, currently studying software development (DAM), and seriously obsessed with art and code.`,
+    //Skills
+    'skills.title': 'Skills',
+    //Projects
+    'projects.title':'Projects',
+    //Contact
+    'contact.title':'Contact Me'
   },
   es: {
-    'nav.home': 'Inicio',
-    'nav.about': 'Sobre mí',
-    'nav.projects': 'Proyectos',
-    'hero.title': 'Hola, soy [Tu Nombre]',
-    'hero.subtitle': 'Desarrollador Frontend y Diseñador Web.',
+    //header
+    'header.title.span': 'Arte',
+    'header.subtitle': 'en Donde Vayas',
+    'header.text':'Incluso en tu',
+    'header.text.span':'pagina web',
+    //about
+    'about.title':'Inicio',
+    'about.subtitle':'Desarrollador FullStack y Artista',
+    'about.texto': `Soy un desarrollador full-stack con un toque artístico. Me encanta darle vida a sitios web y aplicaciones móviles con estilo. Tambien tengo conocimientos en bases de datos, actualmente estudio desarrollo de software (DAM) y estoy obsesionado con el arte y la programación.`,
+    //Skills
+    'skills.title': 'Habilidades',
+     //Projects
+    'projects.title':'Proyectos',
+     //Contact
+    'contact.title':'Contacto'
   },
 };

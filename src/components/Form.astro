@@ -1,10 +1,14 @@
 ---
 import ContactForm from "./ContactForm"
+import { getLangFromUrl, useTranslations } from '../utils/i18n/utils';
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
 ---
 
 <section>
      <div class="flex justify-center items-center">
-            <h2 class="bg-[#85282b] inline-block mb-5 py-2 px-5 text-white text-6xl font-['Crimson-Pro']">Contact Me</h2>
+            <h2 class="bg-[#85282b] inline-block mb-5 py-2 px-5 text-white text-6xl font-['Crimson-Pro']"> {t('contact.title')}</h2>
         </div>
     <div class="mx-4 sm:mx-10 md:mx-20 my-10 w-auto h-auto p-4 sm:p-10 md:p-20 flex text-2xl justify-center items-center">
   <div class="flex h-auto md:h-[40rem] w-full">
