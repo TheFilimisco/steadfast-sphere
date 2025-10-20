@@ -1,11 +1,15 @@
 ---
 import Filigram from "./filigram/Filigram.astro"
+import { getLangFromUrl, useTranslations } from '../utils/i18n/utils';
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
 ---
 <section>
     <Filigram/>
    <div class="mx-4 sm:mx-10 md:mx-20 my-10 w-auto p-6 sm:p-10 md:p-20 text-xl sm:text-2xl">
   <h2 class="bg-[#85282b] inline-block p-2 text-white text-3xl sm:text-4xl font-medium font-['Crimson-Pro']">
-    About Me
+    {t('nav.home')}
   </h2>
 
   <div class="flex flex-col lg:flex-row w-full gap-6 sm:gap-8 mt-6">
