@@ -2,7 +2,9 @@
 id: 3
 title: "Coming Soon"
 color: "#00000"
-description: "Coming"
+description: 
+    en: "coming"
+    es: "proximamente"
 backend: "..."
 frontend: "..."
 database: "..."

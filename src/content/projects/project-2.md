@@ -2,7 +2,9 @@
 id: 2
 title: "SEGURFIRE PROTECCIÓN S.L"
 color: "#85282b"
-description: "This project is part of a comprehensive fire protection company"
+description: 
+    en: "This project is part of a comprehensive fire protection company"
+    es: "Este proyecto es una aplicación web para una compañia de Contra Incendios"
 backend: ""
 frontend: "Astro + Tailwind"
 database: ""

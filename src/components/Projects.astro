@@ -8,8 +8,9 @@ export const prerender = true
 import { getLangFromUrl, useTranslations } from '../utils/i18n/utils';
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
+const textLanSkills = t('skills.list')
 
-
+console.log("From Projects: ", textLanSkills);
 ---
 <section >
     <Filigram/>
@@ -17,9 +18,9 @@ const t = useTranslations(lang);
       <h2 class="bg-[#85282b] inline-block px-4 py-2 text-white text-2xl sm:text-3xl md:text-4xl font-medium font-['Crimson-Pro']">
        {t('projects.title')}
       </h2>
-
+      
       <div class="mt-6">
-            <ProjectCarousel projects={projects} client:load />
+            <ProjectCarousel tLanguage={textLanSkills} projects={projects} client:load />
       </div>
       </div>
     <Filigram/>

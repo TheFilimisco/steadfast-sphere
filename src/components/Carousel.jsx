@@ -3,7 +3,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { forwardRef, useState } from "react";
 
-export default function ProjectCarousel({ projects }) {
+export default function ProjectCarousel({ projects, tLanguage }) {
   const [selected, setSelected] = useState(0);
   const [direction, setDirection] = useState(1);
 
@@ -34,7 +34,7 @@ export default function ProjectCarousel({ projects }) {
             color={bgColor}
             name={current.data.title}
             routeImg={current.data.img}
-            description={current.data.description}
+            description={current.data.description[tLanguage]}
             backend={current.data.backend}
             web={current.data.web}
             frontend={current.data.frontend}

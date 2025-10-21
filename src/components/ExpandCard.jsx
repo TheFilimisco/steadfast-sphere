@@ -25,7 +25,7 @@ export default function ExpandCard({
       <AnimatePresence>
         {!isHovered && (
           <motion.h3
-            className="font-['Gloock'] text-5xl mb-4"
+            className="font-['Gloock'] text-5xl mb-4 text-center"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
@@ -48,7 +48,7 @@ export default function ExpandCard({
           >
             <div className="flex flex-col gap-3 sm:flex-row ">
               {skills.map((skill) => (
-                <p className="px-2 py-1 sm:px-4 sm:py-3 bg-[#85282b] text-white rounded-lg hover:bg-[#5a1618] text-sm sm:text-2xl">
+                <p className="px-2 py-1 sm:px-4 sm:py-3 bg-[#85282b] text-white rounded-lg hover:bg-[#5a1618] text-sm sm:text-2xl flex items-center">
                   {skill}
                 </p>
               ))}
