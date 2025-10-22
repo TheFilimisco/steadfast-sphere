@@ -3,8 +3,11 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 
-export default function ContactForm() {
+export default function ContactForm(contactForm) {
   const [sent, setSent] = useState(false);
+ 
+  const contactFormated = contactForm.contactForm;
+
 
   return (
     <motion.form
@@ -54,7 +57,7 @@ export default function ContactForm() {
           required
           type="text"
           name="name"
-          defaultValue="Name"
+          defaultValue={contactFormated.formName}
           className="w-full text-sm mt-1 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-[#85282b] bg-[#c0ad8c]  text-[#414040]"
         />
       </div>
@@ -64,7 +67,7 @@ export default function ContactForm() {
           required
           type="email"
           name="email"
-          defaultValue="Email"
+          defaultValue={contactFormated.formEmail}
           className="text-sm mt-1 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-[#85282b] bg-[#c0ad8c] text-[#414040]"
         />
       </div>
@@ -74,7 +77,7 @@ export default function ContactForm() {
           required
           name="message"
           rows="4"
-          defaultValue="Request"
+          defaultValue={contactFormated.formRequest}
           className="text-base mt-4 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-[#85282b] bg-[#c0ad8c]  text-[#414040]"
         />
       </div>
@@ -84,7 +87,7 @@ export default function ContactForm() {
         type="submit"
         className="mx-auto w-full bg-[#85282b] text-white py-2 p- mt-4 text-xl"
       >
-        Send
+        {contactFormated.formButton}
       </motion.button>
     </motion.form>
   );

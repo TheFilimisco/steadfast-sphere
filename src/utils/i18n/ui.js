@@ -21,6 +21,10 @@ export const ui = {
     'projects.title':'Projects',
     //Contact
     'contact.title':'Contact Me',
+    'contact.form.name':'Name',
+    'contact.form.email':'Email',
+    'contact.form.request':'Request',
+    'contact.form.button':'Send',
     //Footer
     'footer.copyright': 'All rights reserved.'
   },
@@ -41,6 +45,10 @@ export const ui = {
     'projects.title':'Proyectos',
      //Contact
     'contact.title':'Contacto',
+    'contact.form.name':'Nombre',
+    'contact.form.email':'Correo',
+    'contact.form.request':'Escribe tu duda aqui...',
+    'contact.form.button':'Enviar',
      //Footer
     'footer.copyright': 'Todos los derechos reservados.'
   },

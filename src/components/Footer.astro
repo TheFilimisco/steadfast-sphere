@@ -1,6 +1,12 @@
+---
+import { getLangFromUrl, useTranslations } from '../utils/i18n/utils';
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
 <footer class="bg-[#85282b] text-white py-8 mt-20">
   <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-    <p class="text-sm font-light">© 2025 TheFilimisco. All rights reserved.</p>
+    <p class="text-sm font-light">© 2025 TheFilimisco. {t('footer.copyright')} </p>
 
     <div class="flex space-x-4 text-white">
       <a href="https://github.com/StephenDC-UwU" target="_blank" class="flex flex-col items-center hover:text-[#E8D4B1]">
