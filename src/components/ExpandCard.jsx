@@ -46,9 +46,9 @@ export default function ExpandCard({
             transition={{ duration: 0.3 }}
             className="text-center text-lg mt-4"
           >
-            <div className="flex flex-col gap-3 sm:flex-row ">
+            <div className="flex flex-col gap-3 sm:flex-row  ">
               {skills.map((skill) => (
-                <p className="px-2 py-1 sm:px-4 sm:py-3 bg-[#85282b] text-white rounded-lg hover:bg-[#5a1618] text-sm sm:text-2xl flex items-center">
+                <p className="flex items-center text-center justify-center px-2 py-1 sm:px-4 sm:py-3 bg-[#85282b] text-white rounded-lg hover:bg-[#5a1618] text-sm sm:text-2xl ">
                   {skill}
                 </p>
               ))}

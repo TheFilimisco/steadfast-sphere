@@ -5,7 +5,8 @@ const cards = [
   {
     title: {
       en: "Frontend",
-      es: "Frontend"
+      es: "Frontend",
+      ca: "Frontend",
     },
     color: "#E8D4B1",
     skills: {
@@ -29,26 +30,36 @@ const cards = [
         "Tailwind",
         "Next js",
       ],
+      ca: [
+        "Html",
+        "Javascript",
+        "Css",
+        "React",
+        "Astro",
+        "React Native",
+        "Tailwind",
+        "Next js",
+      ],
     },
   },
   {
     title: {
       en: "Backend",
-      es: "Backend"
+      es: "Backend",
+      ca: "Backend",
     },
     color: "#E8D4B1",
-    skills: 
-     {
+    skills: {
       en: ["Node js", "Express", "FastApi", "Flask", "Spring Boot"],
-      es: [
-        "Node js", "Express", "FastApi", "Flask", "Spring Boot"
-      ],
-    }
+      es: ["Node js", "Express", "FastApi", "Flask", "Spring Boot"],
+      ca: ["Node js", "Express", "FastApi", "Flask", "Spring Boot"],
+    },
   },
   {
     title: {
       en: "SoftSkills",
-      es: "Habilidades Blandas"
+      es: "Habilidades Blandas",
+      ca: "Habilitats suaus",
     },
     color: "#E8D4B1",
     skills: {
@@ -60,6 +71,13 @@ const cards = [
         "Empatia",
         "Pensamiento Critico",
       ],
+      ca: [
+        "Creatiu",
+        "Capacitat d'Adaptació",
+        "Treball en Equip",
+        "Empatia",
+        "Pensament Crític",
+      ],
     },
   },
 ];
@@ -69,7 +87,7 @@ export default function SkillsSection(tLanguage) {
   const formatTLanguage = tLanguage["tLanguage"];
 
   return (
-    <div className="flex flex-col sm:flex-row flex-wrap gap-5  sm:h-[30rem] w-full h-full">
+    <div className="flex flex-col sm:flex-row flex-wrap gap-5 sm:h-[30rem] w-full h-full">
       {cards.map((card, index) => (
         <ExpandCard
           key={index}

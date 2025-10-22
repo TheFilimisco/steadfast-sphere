@@ -5,6 +5,7 @@ color: "#00000"
 description: 
     en: "coming"
     es: "proximamente"
+    ca: "pròximament"
 backend: "..."
 frontend: "..."
 database: "..."
