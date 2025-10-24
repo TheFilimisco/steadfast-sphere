@@ -14,6 +14,7 @@ export const ui = {
     "about.title": "Home",
     "about.subtitle": "FullStack Developer and Artist",
     "about.texto": `I'm a full-stack developer with an artistic twist. I love bringing websites and mobile apps to life with style. I'm into databases, currently studying software development (DAM), and seriously obsessed with art and code.`,
+    "about.button": "Download CV",
     //Skills
     "skills.title": "Skills",
     "skills.list": "en",
@@ -40,6 +41,8 @@ export const ui = {
     "about.title": "Inicio",
     "about.subtitle": "Desarrollador FullStack y Artista",
     "about.texto": `Soy un desarrollador full-stack con un toque artístico. Me encanta darle vida a sitios web y aplicaciones móviles con estilo. Tambien tengo conocimientos en bases de datos, actualmente estudio desarrollo de software (DAM) y estoy obsesionado con el arte y la programación.`,
+    "about.button": "Descargar CV",
+    
     //Skills
     "skills.title": "Habilidades",
     "skills.list": "es",
@@ -66,6 +69,7 @@ export const ui = {
     "about.title": "Inici",
     "about.subtitle": "Desenvolupador FullStack i Artista",
     "about.texto": `Sóc un desenvolupador full-stack amb un toc artístic. M'encanta donar vida a llocs web i aplicacions mòbils amb estil. També tinc coneixements en bases de dades, actualment estudio desenvolupament de software (DAM) i estic obsessionat amb l'art i la programació.`,
+    "about.button": "Descarregar CV",
 
     //Skills
     "skills.title": "Habilitats",
