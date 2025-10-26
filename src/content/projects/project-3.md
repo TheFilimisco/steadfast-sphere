@@ -1,15 +1,16 @@
 ---
-id: 3
-title: "Coming Soon"
-color: "#00000"
-description: 
-    en: "coming"
-    es: "proximamente"
-    ca: "pròximament"
-backend: "..."
-frontend: "..."
-database: "..."
-img: "project1.jpg"
-repository_frontend: "https://github.com/StephenDC-UwU/schedule_employee_next_js_.git"
-repository_backend: "https://github.com/StephenDC-UwU/calendar_employees.git"
+id: 2
+title: "E-commerce Diversal"
+color: "#85282b"
+description:
+  en: "E-commerce platform (clothing and fashion accessories)"
+  es: "Plataforma de comercio electrónico (ropa y accesorios de moda)"
+  ca: "Plataforma de comerç electrònic (roba i accessoris de moda)"
+backend: "Strapi (CMS)"
+frontend: "Next.js + Tailwind"
+database: "PostgreSQL (Neon)"
+img: "project3.png"
+repository_frontend: "https://github.com/StephenDC-UwU/frontend-ecommerce_diversal.git"
+repository_backend: "https://github.com/StephenDC-UwU/backend-ecommerce_diversal.git"
+web: "https://frontend-ecommerce-diversal.vercel.app/"
 ---
