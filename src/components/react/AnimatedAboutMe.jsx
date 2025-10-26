@@ -36,6 +36,8 @@ export default function AnimatedAbout({
     cvDownloadPath, 
     cvFilename 
 }) {
+
+  const imageUrl = profileImgSrc.src;
   return (
     <motion.div
       className="mx-4 sm:mx-10 md:mx-20 my-10 w-auto p-6 sm:p-10 md:p-20 text-xl sm:text-2xl"
@@ -60,7 +62,7 @@ export default function AnimatedAbout({
             The Filimisco
           </p>
           <img
-            src={profileImgSrc}
+            src={imageUrl}
             className="object-cover w-full h-[20rem] sm:h-[25rem] md:h-[30rem]"
             alt="img-profile"
           />

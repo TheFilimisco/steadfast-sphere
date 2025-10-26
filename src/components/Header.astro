@@ -3,23 +3,19 @@ import { getLangFromUrl, useTranslations } from "../utils/i18n/utils";
 import AnimatedTitle from "./react/AnimatedTitle";
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
+
+import { Picture } from "astro:assets";
+import imageHeader from "../assets/bg-header.jpg";
 ---
 
 <header
   class="relative w-full h-[60rem] sm:h-[50rem] md:h-[55rem] lg:h-[60rem] overflow-hidden group"
 >
-  <img
+  <Picture
     id="zoom-img"
-    src="/bg-header.jpg"
+    src={imageHeader}
     alt="bg-header"
-    class="w-full h-full object-cover
-    transform scale-100
-    transition-transform
-    duration-[20000ms]
-    ease-in-out
-    absolute
-    group-hover:scale-150
-    z-0"
+    class="w-full h-full object-cover transform scale-100 transition-transform duration-[20000ms] ease-in-out absolute group-hover:scale-150 z-0"
   />
 
   <div class="absolute top-4 right-4 z-2">

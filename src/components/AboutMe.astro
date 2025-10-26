@@ -4,6 +4,7 @@ import { getLangFromUrl, useTranslations } from "../utils/i18n/utils";
 import AnimatedAbout from "./react/AnimatedAboutMe";
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
+import imageAboutMe from "../assets/profile.jpeg";
 ---
 
 <section>
@@ -13,7 +14,7 @@ const t = useTranslations(lang);
     aboutSubtitle={t("about.subtitle")}
     aboutTexto={t("about.texto")}
     aboutButton={t("about.button")}
-    profileImgSrc="/profile.jpeg"
+    profileImgSrc={imageAboutMe}
     cvDownloadPath={`/cv/${t("skills.list")}.pdf`}
     cvFilename="thefilimisco-CV.pdf"
     client:load

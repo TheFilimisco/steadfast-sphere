@@ -3,6 +3,7 @@ import ContactForm from "./ContactForm";
 import { getLangFromUrl, useTranslations } from "../utils/i18n/utils";
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
+import imageForm from "../assets/form.jpeg";
 
 const contactForm = {
   formName: t("contact.form.name"),
@@ -24,14 +25,12 @@ const contactForm = {
     class="mx-4 sm:mx-10 md:mx-20 my-10 w-auto h-auto p-4 sm:p-10 md:p-20 flex text-2xl justify-center items-center"
   >
     <div class="flex h-auto md:h-[40rem] w-full">
-      <!-- Imagen: visible solo en pantallas medianas en adelante -->
       <img
-        src="/form.jpeg"
-        alt="form"
         class="hidden md:block object-cover w-1/2 h-full brightness-75 rounded-l-xl"
+        src={imageForm.src}
+        alt="form"
       />
 
-      <!-- Formulario -->
       <div class="w-full md:w-1/2 h-full rounded-r-xl">
         <ContactForm contactForm={contactForm} client:load />
       </div>
