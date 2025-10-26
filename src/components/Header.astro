@@ -1,5 +1,6 @@
 ---
 import { getLangFromUrl, useTranslations } from "../utils/i18n/utils";
+import AnimatedTitle from "./react/AnimatedTitle";
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
@@ -14,10 +15,10 @@ const t = useTranslations(lang);
     class="w-full h-full object-cover
     transform scale-100
     transition-transform
-    duration-[10000ms]
+    duration-[20000ms]
     ease-in-out
     absolute
-    group-hover:scale-110
+    group-hover:scale-150
     z-0"
   />
 
@@ -38,30 +39,12 @@ const t = useTranslations(lang);
     </div>
   </div>
 
-  <div
-    class="relative z-1 flex flex-col items-start justify-center h-full px-6 sm:px-12 md:px-24 lg:pl-96 space-y-6 cursor-default"
-  >
-    <h1
-      class="font-['Gloock'] text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl tracking-normal text-black leading-tight w-full max-w-[60rem]"
-    >
-      {t("header.title.article")}
-
-      <span
-        class="bg-[#9B696A] text-[#F2F2F2] transition-colors hover:bg-[#F2F2F2] hover:text-[#9B696A] ease-in-out duration-700"
-        >{t("header.title.span")}</span
-      >
-
-      {t("header.subtitle")}
-    </h1>
-
-    <h2
-      class="ml-1 sm:ml-2 font-['Gloock'] font-light text-2xl sm:text-3xl md:text-4xl flex flex-wrap items-center"
-    >
-      {t("header.text")}
-      <span
-        class="text-[#691e21] p-1 sm:p-2 bg-[#F5F6F1] font-bold text-3xl sm:text-4xl ml-2 transition-colors hover:bg-[#691e21] hover:text-[#F5F6F1] ease-in-out duration-700"
-        >{t("header.text.span")}</span
-      >
-    </h2>
-  </div>
+  <AnimatedTitle
+    article={t("header.title.article")}
+    span={t("header.title.span")}
+    subtitle={t("header.subtitle")}
+    text={t("header.text")}
+    textSpan={t("header.text.span")}
+    client:load
+  />
 </header>
