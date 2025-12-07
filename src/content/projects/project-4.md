@@ -1,15 +1,16 @@
 ---
-id: 3
-title: "Coming Soon"
-color: "#00000"
-description: 
-    en: "coming"
-    es: "proximamente"
-    ca: "pròximament"
-backend: "..."
-frontend: "..."
-database: "..."
-img: "project1.jpg"
-repository_frontend: "https://github.com/StephenDC-UwU/schedule_employee_next_js_.git"
-repository_backend: "https://github.com/StephenDC-UwU/calendar_employees.git"
+id: 2
+title: "New Homes - Landing Page"
+color: "#85282b"
+description:
+  en: "This project focuses on the visual impact in the luxury real estate market"
+  es: "Este proyecto se enfoca en el impacto visual en el mercado inmobiliario de lujo"
+  ca: "Aquest projecte s'enfoca a l'impacte visual al mercat immobiliari de luxe"
+backend: ""
+frontend: "Astro + Tailwind"
+database: ""
+img: "project4.jpeg"
+repository_frontend: ""
+repository_backend: ""
+web: "https://landpage-new-homes.vercel.app/"
 ---
