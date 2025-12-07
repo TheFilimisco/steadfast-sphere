@@ -9,7 +9,7 @@ description:
 backend: "Strapi (CMS)"
 frontend: "Next.js + Tailwind"
 database: "PostgreSQL (Neon)"
-img: "project3.png"
+img: "project-3.jpg"
 repository_frontend: "https://github.com/StephenDC-UwU/frontend-ecommerce_diversal.git"
 repository_backend: "https://github.com/StephenDC-UwU/backend-ecommerce_diversal.git"
 web: "https://frontend-ecommerce-diversal.vercel.app/"
