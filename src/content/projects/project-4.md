@@ -9,7 +9,7 @@ description:
 backend: ""
 frontend: "Astro + Tailwind"
 database: ""
-img: "project4.jpeg"
+img: "project4.jpg"
 repository_frontend: ""
 repository_backend: ""
 web: "https://landpage-new-homes.vercel.app/"
