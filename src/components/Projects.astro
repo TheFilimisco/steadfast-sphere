@@ -1,26 +1,34 @@
 ---
-import Filigram from "./filigram/Filigram.astro"
-import ProjectCarousel from "./Carousel"
+import Filigram from "./filigram/Filigram.astro";
+import ProjectCarousel from "./Carousel";
 import { getCollection } from "astro:content";
 const projects = await getCollection("projects");
-export const prerender = true
+export const prerender = true;
 
-import { getLangFromUrl, useTranslations } from '../utils/i18n/utils';
+import { getLangFromUrl, useTranslations } from "../utils/i18n/utils";
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
-const textLanSkills = t('skills.list')
-
+const textLanSkills = t("skills.list");
 ---
-<section >
-    <Filigram/>
-    <div class="w-full max-w-screen-xl mx-auto my-10 p-6 sm:p-10 md:p-16 lg:p-20 text-xl sm:text-2xl">
-      <h2 class="bg-[#85282b] inline-block px-4 py-2 text-white text-2xl sm:text-3xl md:text-4xl font-medium font-['Crimson-Pro']">
-       {t('projects.title')}
-      </h2>
-      
-      <div class="mt-6">
-            <ProjectCarousel tLanguage={textLanSkills} projects={projects} client:load />
-      </div>
-      </div>
-    <Filigram/>
-</section>  
+
+<section>
+  <Filigram />
+  <div
+    class="w-full max-w-screen-xl mx-auto my-10 p-6 sm:p-10 md:p-16 lg:p-12 text-xl sm:text-2xl"
+  >
+    <h2
+      class="bg-[#85282b] inline-block px-4 py-2 text-white text-2xl sm:text-3xl md:text-4xl font-medium font-['Crimson-Pro']"
+    >
+      {t("projects.title")}
+    </h2>
+
+    <div class="mt-6">
+      <ProjectCarousel
+        tLanguage={textLanSkills}
+        projects={projects}
+        client:load
+      />
+    </div>
+  </div>
+  <Filigram />
+</section>

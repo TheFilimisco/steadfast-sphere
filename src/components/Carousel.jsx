@@ -80,14 +80,14 @@ const Slide = forwardRef(function Slide(
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: direction * -50 }}
       transition={{ type: "spring", bounce: 0.3, duration: 0.5 }}
-      className="absolute w-300 h-150 rounded-xl flex items-center justify-center text-white text-lg font-semibold shadow-md"
+      className="relative w-full h-150 rounded-xl flex items-center justify-center text-white text-lg font-semibold shadow-md"
       style={{ backgroundColor: color }}
     >
       <div
-        className="w-full h-screen bg-gray-100 flex flex-col items-center justify-center gap-8 p-4 relative"
+        className="w-full h-screen bg-gray-100 flex flex-col items-center justify-center gap-8 p-4"
         style={{
           backgroundImage: `url(./${routeImg})`,
-          backgroundSize: "contain",
+          backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
         }}
