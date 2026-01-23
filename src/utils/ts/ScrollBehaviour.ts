@@ -165,3 +165,39 @@ dots.forEach((dot) => {
     }
   });
 });
+
+// Mobile Swipe Support
+let touchStartY = 0;
+let touchEndY = 0;
+
+window.addEventListener(
+  "touchstart",
+  (e) => {
+    touchStartY = e.touches[0].clientY;
+  },
+  { passive: true },
+);
+
+window.addEventListener(
+  "touchend",
+  (e) => {
+    touchEndY = e.changedTouches[0].clientY;
+    handleSwipe();
+  },
+  { passive: true },
+);
+
+function handleSwipe() {
+  const diffY = touchStartY - touchEndY;
+  const threshold = 50; // Minimum distance for swipe
+
+  if (Math.abs(diffY) > threshold) {
+    if (diffY > 0) {
+      // Swiped Up -> Next Section
+      handleScroll("down");
+    } else {
+      // Swiped Down -> Previous Section
+      handleScroll("up");
+    }
+  }
+}
