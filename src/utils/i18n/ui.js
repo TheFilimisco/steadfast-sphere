@@ -4,19 +4,30 @@ export const defaultLang = "en";
 // Diccionarios de texto
 export const ui = {
   en: {
-    //header
+    //Hero
+    "header.alt.image.bg": "Classic art background",
     "header.title.article": "",
     "header.title.span": "Art",
-    "header.subtitle": " is Everywhere",
+    "header.is": "is",
+    "header.everywhere": "Everywhere",
+    "header.subtitle": " is Everywhere", // Keeping for legacy if needed
     "header.text": "Even on your",
     "header.text.span": "website",
     //about
     "about.title": "Home",
+    "about.question": "¿Do you want know about me?",
+    "about.hello": "Hello, I'm",
+    "about.name": "TheFilimisco",
     "about.subtitle": "FullStack Developer and Artist",
     "about.texto": `I'm a full-stack developer with an artistic twist. I love bringing websites and mobile apps to life with style. I'm into databases, currently studying software development (DAM), and seriously obsessed with art and code.`,
-    "about.button": "Download CV",
+    "about.cv": "Download CV",
+    "about.cv.url": "/cv/en.pdf",
+    "about.contact": "Contact Me",
     //Skills
-    "skills.title": "Skills",
+    "skills.title": "And about my skills?...",
+    "skills.frontend": "Frontend",
+    "skills.backend": "Backend",
+    "skills.softskills": "SoftSkills",
     "skills.list": "en",
 
     //Projects
@@ -32,19 +43,30 @@ export const ui = {
   },
   es: {
     //header
+    "header.alt.image.bg": "Fondo de arte clásico",
     "header.title.article": "El ",
     "header.title.span": "Arte",
+    "header.is": "está",
+    "header.everywhere": "en todas partes",
     "header.subtitle": " esta en todas partes",
     "header.text": "Incluso en tu",
     "header.text.span": "pagina web",
     //about
     "about.title": "Inicio",
+    "about.question": "¿Quieres saber sobre mí?",
+    "about.hello": "Hola, soy",
+    "about.name": "TheFilimisco",
     "about.subtitle": "Desarrollador FullStack y Artista",
     "about.texto": `Soy un desarrollador full-stack con un toque artístico. Me encanta darle vida a sitios web y aplicaciones móviles con estilo. Tambien tengo conocimientos en bases de datos, actualmente estudio desarrollo de software (DAM) y estoy obsesionado con el arte y la programación.`,
-    "about.button": "Descargar CV",
+    "about.cv": "Descargar CV",
+    "about.cv.url": "/cv/es.pdf",
+    "about.contact": "Contáctame",
 
     //Skills
-    "skills.title": "Habilidades",
+    "skills.title": "¿Y sobre mis habilidades?...",
+    "skills.frontend": "Frontend",
+    "skills.backend": "Backend",
+    "skills.softskills": "Habilidades Blandas",
     "skills.list": "es",
     //Projects
     "projects.title": "Proyectos",
@@ -59,20 +81,31 @@ export const ui = {
   },
   ca: {
     //header
+    "header.alt.image.bg": "Fons d'art clàssic",
     "header.title.article": "L'",
     "header.title.span": "Art",
+    "header.is": "és",
+    "header.everywhere": "a tot arreu",
     "header.subtitle": " és a tot arreu",
     "header.text": "Fins i tot a la teva",
     "header.text.span": "pàgina web",
 
     //about
     "about.title": "Inici",
+    "about.question": "¿Vols saber sobre mi?",
+    "about.hello": "Hola, sóc",
+    "about.name": "TheFilimisco",
     "about.subtitle": "Desenvolupador FullStack i Artista",
     "about.texto": `Sóc un desenvolupador full-stack amb un toc artístic. M'encanta donar vida a llocs web i aplicacions mòbils amb estil. També tinc coneixements en bases de dades, actualment estudio desenvolupament de software (DAM) i estic obsessionat amb l'art i la programació.`,
-    "about.button": "Descarregar CV",
+    "about.cv": "Descarregar CV",
+    "about.cv.url": "/cv/ca.pdf",
+    "about.contact": "Contacta'm",
 
     //Skills
-    "skills.title": "Habilitats",
+    "skills.title": "I sobre les meves habilitats?...",
+    "skills.frontend": "Frontend",
+    "skills.backend": "Backend",
+    "skills.softskills": "Habilitats Toves",
     "skills.list": "ca", // 'ca' és el codi per català
 
     //Projects

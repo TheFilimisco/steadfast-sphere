@@ -1,6 +1,8 @@
 ---
-import '../styles/global.css';
+import "../styles/global.css";
+import LayerBackground from "../components/LayerBackground.astro";
 ---
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -8,13 +10,20 @@ import '../styles/global.css';
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/icon_profile_svg.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Gloock&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Gloock&display=swap"
+			rel="stylesheet"
+		/>
 		<title>TheFilimisco</title>
 	</head>
-	<body class="bg-[#E3D9D0]">
-		<slot/>
+	<body class="bg-bg-off-white">
+		<LayerBackground />
+		<slot />
 	</body>
+	<script>
+		import "../utils/ts/ScrollBehaviour.ts";
+		import "../utils/ts/SkillBehaviour.ts";
+	</script>
 </html>
-

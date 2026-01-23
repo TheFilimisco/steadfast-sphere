@@ -1,0 +1,78 @@
+---
+import { Image } from "astro:assets";
+import heroBg from "../assets/hero-bg.png";
+import { ui, defaultLang } from "../utils/i18n/ui";
+
+const lang = (Astro.currentLocale || defaultLang) as keyof typeof ui;
+const t = ui[lang] || ui[defaultLang as keyof typeof ui];
+---
+
+<section
+    class="h-dvh w-full relative overflow-hidden flex items-center justify-center"
+>
+    <!-- Background Image -->
+    <div class="absolute inset-0 z-0">
+        <Image
+            src={heroBg}
+            alt={t["header.alt.image.bg"]}
+            class="w-full h-full object-cover"
+        />
+        <div class="absolute inset-0 bg-black/30"></div>
+    </div>
+
+    <!-- Main Content -->
+    <div
+        class="relative z-10 flex flex-col md:flex-row items-center justify-center w-full max-w-[1440px] px-4 md:px-[120px]"
+    >
+        <!-- Text Content -->
+        <div
+            class="flex flex-col items-start relative mb-10 md:mb-0 animate-slide-in-fall"
+        >
+            <h1
+                class="font-bonny font-bold text-[80px] md:text-[180px] leading-[0.8] md:leading-[0.9] text-bg-off-white drop-shadow-lg"
+            >
+                <span
+                    class="text-black bg-bg-off-white px-4 py-2 hover:bg-accent-dark hover:text-bg-off-white transition-colors duration-300 ease-in-out inline-block -rotate-3"
+                    >{t["header.title.span"]}</span
+                >
+                <span class="text-bg-off-white">{t["header.is"]}</span><br />
+                {t["header.everywhere"]}
+            </h1>
+            <h2
+                class="font-bonny font-medium text-[24px] md:text-[41px] text-bg-off-white mt-4 md:mt-8 bg-accent-dark px-4 py-1"
+            >
+                {t["header.text"]}
+                <span
+                    class="text-white bg-black px-2 py-1 hover:bg-bg-off-white hover:text-black transition-colors duration-300 ease-in-out inline-block"
+                >
+                    {t["header.text.span"]}
+                </span>
+            </h2>
+        </div>
+    </div>
+
+    <!-- Navigation/Language (Example placement based on design) -->
+    <div
+        class="absolute top-[20px] md:top-[82px] md:right-[166px] animate-slide-in-fall"
+    >
+        <div
+            class="text-bg-off-white text-[24px] md:text-[40px] px-4 py-2 font-bonny font-medium flex items-center gap-1"
+        >
+            <div
+                class="px-2 hover:bg-accent-dark hover:text-black transition-colors duration-300 ease-in-out"
+            >
+                <a href="/">EN</a>
+            </div>
+            | <div
+                class="px-2 hover:bg-accent-dark hover:text-black transition-colors duration-300 ease-in-out"
+            >
+                <a href="/es">ES </a>
+            </div>
+            | <div
+                class="px-2 hover:bg-accent-dark hover:text-black transition-colors duration-300 ease-in-out"
+            >
+                <a href="/ca">CA</a>
+            </div>
+        </div>
+    </div>
+</section>
