@@ -166,6 +166,24 @@ dots.forEach((dot) => {
   });
 });
 
+// Internal Link Click Handlers
+document.querySelectorAll('a[href^="#section-"]').forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (isAnimating) return;
+    const href = link.getAttribute("href");
+    if (href) {
+      const target = parseInt(href.replace("#section-", ""));
+      if (!isNaN(target) && target !== currentStep) {
+        isAnimating = true;
+        currentStep = target;
+        updateView();
+        setTimeout(() => (isAnimating = false), 1000);
+      }
+    }
+  });
+});
+
 // Mobile Swipe Support
 let touchStartY = 0;
 let touchEndY = 0;
