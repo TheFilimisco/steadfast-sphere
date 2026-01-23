@@ -1,14 +1,14 @@
-// State
-let currentStep = 0;
-const totalSections = 4; // Hero, Info, Skills, Projects
-let isAnimating = false;
-
 const sections = document.querySelectorAll(
   ".section",
 ) as NodeListOf<HTMLElement>;
 const dots = document.querySelectorAll(
   ".nav-dot",
 ) as NodeListOf<HTMLElement>;
+
+// State
+let currentStep = 0;
+const totalSections = sections.length;
+let isAnimating = false;
 
 function updateView() {
   // Update Sections

@@ -34,7 +34,7 @@ const sortedProjects = projects.sort((a, b) => a.data.id - b.data.id);
         sortedProjects.map((project, index) => (
           <div
             class={`project-slide absolute inset-0 w-full h-full transition-opacity duration-500 ease-in-out grid grid-cols-1 md:grid-cols-8 gap-8 items-center ${
-              index === 0 ? "opacity-100 z-10 pointer-events-auto" : "opacity-0 z-0 pointer-events-none"
+              index === 0 ? "opacity-100 z-10" : "opacity-0 z-0"
             }`}
             data-index={index}
           >
@@ -61,7 +61,7 @@ const sortedProjects = projects.sort((a, b) => a.data.id - b.data.id);
             <div class="col-span-1 md:col-span-2 h-full flex flex-col gap-6 justify-center animate-slide-in-right">
                   <!-- Description & Stack -->
                  <div class="flex flex-col gap-4">
-                    <p class="font-manrope text-sm md:text-base text-gray-300 leading-relaxed max-w-2xl">
+                    <p class="font-pilcrow text-sm md:text-base text-gray-300 leading-relaxed max-w-2xl">
                         {project.data.description[lang] || project.data.description[defaultLang]}
                     </p>
 
@@ -84,7 +84,7 @@ const sortedProjects = projects.sort((a, b) => a.data.id - b.data.id);
                 </div>
 
                 <!-- Buttons -->
-                 <div class="flex flex-col gap-4 mt-2 items-center md:items-start">
+                 <div class="flex flex-col gap-4 mt-2 items-center md:items-start font-pilcrow">
                      {project.data.web && (
                         
                         <a href={project.data.web} target="_blank" rel="noopener noreferrer" class="px-8 py-3 bg-white text-black rounded-full font-medium hover:bg-gray-200 transition-colors duration-300 text-sm flex items-center">

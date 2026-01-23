@@ -11,11 +11,11 @@ function showSlide(index: number) {
         if (i === index) {
             el.style.opacity = "1";
             el.style.zIndex = "10";
-            el.style.pointerEvents = "auto";
+            el.style.visibility = "visible";
         } else {
             el.style.opacity = "0";
             el.style.zIndex = "0";
-            el.style.pointerEvents = "none";
+            el.style.visibility = "hidden";
         }
     });
 }

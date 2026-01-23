@@ -37,6 +37,21 @@ export const ui = {
     "softskills.social": "Team Work",
     "softskills.talk": "Communication",
 
+    //Experience
+    "experience.title": "My Experience",
+
+
+    "experience.job1.title": "FullStack Developer",
+    "experience.job1.company": "Softwarengineering",
+    "experience.job1.date": "March - June 2024",
+    "experience.job1.desc": "<ul><li>Development and documentation of RESTful APIs for web applications.</li><li>Design, implementation, and management of relational databases.</li><li>Consumption and integration of external APIs in full-stack projects.</li></ul>",
+
+
+    "experience.job2.title": "Frontend Developer",
+    "experience.job2.company": "Persuadis",
+    "experience.job2.date": "September 2025 - Now",
+    "experience.job2.desc": "<ul><li>Creation and layout of responsive landing pages using HTML, CSS, and JavaScript.</li><li>Development of interactive web elements and user interfaces.</li><li>Basic integration of dynamic functionalities with PHP.</li><li>Code and structure optimization to improve user experience.</li><li>Collaboration on visual design and usability testing.</li></ul>",
+
     //Projects
     "projects.title": "Projects",
     //Contact
@@ -84,6 +99,18 @@ export const ui = {
     "softskills.social": "Trabajo en equipo",
     "softskills.talk": "Comunicación",
 
+
+
+    //Experience
+    "experience.title": "Mi Experiencia",
+    "experience.job1.title": "Ingeniero de Software",
+    "experience.job1.company": "Google Inc",
+    "experience.job1.date": "2024 - Presente",
+    "experience.job1.desc": "Desarrollando aplicaciones web escalables y trabajando con tecnologías en la nube.",
+    "experience.job2.title": "Desarrollador FullStack",
+    "experience.job2.company": "Persuit",
+    "experience.job2.date": "2022 - 2024",
+    "experience.job2.desc": "Construí soluciones full-stack usando React, Node.js y PostgreSQL.",
 
     //Projects
     "projects.title": "Proyectos",
@@ -135,6 +162,18 @@ export const ui = {
     "softskills.talk": "Comunicació",
 
 
+
+
+    //Experience
+    "experience.title": "La meva Experiència",
+    "experience.job1.title": "Enginyer de Software",
+    "experience.job1.company": "Google Inc",
+    "experience.job1.date": "2024 - Present",
+    "experience.job1.desc": "Desenvolupant aplicacions web escalables i treballant amb tecnologies al núvol.",
+    "experience.job2.title": "Desenvolupador FullStack",
+    "experience.job2.company": "Persuit",
+    "experience.job2.date": "2022 - 2024",
+    "experience.job2.desc": "Vaig construir solucions full-stack utilitzant React, Node.js i PostgreSQL.",
 
     //Projects
     "projects.title": "Projectes",
