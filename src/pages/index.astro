@@ -5,59 +5,79 @@ import AboutMe from "../components/AboutMe.astro";
 import Skills from "../components/Skills.astro";
 import Projects from "../components/Projects.astro";
 import Experience from "../components/Experience.astro";
+import Contact from "../components/Contact.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <Layout>
   <!-- Main Container: Relative for absolute positioning of children -->
   <main class="relative h-screen w-full overflow-hidden bg-bg-off-white">
-    <!-- Hero Section (Z-40: Top) -->
+    <!-- Hero Section (Z-50: Top) -->
     <div
       id="section-0"
-      class="section absolute inset-0 z-40 transition-opacity duration-1000 ease-in-out opacity-100"
+      class="section absolute inset-0 z-70 transition-opacity duration-1000 ease-in-out opacity-100"
       data-index="0"
     >
       <Hero />
     </div>
 
-    <!-- Info Section (Z-30: Behind Hero) -->
+    <!-- Info Section (Z-40) -->
     <div
       id="section-1"
-      class="section absolute inset-0 z-30 transition-opacity duration-1000 ease-in-out opacity-100"
+      class="section absolute inset-0 z-60 transition-opacity duration-1000 ease-in-out opacity-100"
       data-index="1"
     >
       <AboutMe />
     </div>
 
-    <!-- Skills Section (Z-20: Middle) -->
+    <!-- Skills Section (Z-30) -->
     <div
       id="section-2"
-      class="section absolute inset-0 z-20 transition-opacity duration-1000 ease-in-out opacity-100"
+      class="section absolute inset-0 z-50 transition-opacity duration-1000 ease-in-out opacity-100"
       data-index="2"
     >
       <Skills />
     </div>
 
-    <!-- Projects Section (Z-10: Bottom-ish) -->
+    <!-- Projects Section (Z-20) -->
     <div
       id="section-3"
-      class="section absolute inset-0 z-10 transition-opacity duration-1000 ease-in-out opacity-100"
+      class="section absolute inset-0 z-40 transition-opacity duration-1000 ease-in-out opacity-100"
       data-index="3"
     >
       <Projects />
     </div>
 
-    <!-- Experience Section (Z-0: Bottom) -->
+    <!-- Experience Section (Z-10) -->
     <div
       id="section-4"
-      class="section absolute inset-0 z-0 transition-opacity duration-1000 ease-in-out opacity-100"
+      class="section absolute inset-0 z-30 transition-opacity duration-1000 ease-in-out opacity-100"
       data-index="4"
     >
       <Experience />
     </div>
 
-    <!-- Navigation Dots (Z-50: Above everything) -->
+    <!-- Contact Section (Z-0: Bottom) -->
     <div
-      class="absolute right-[35px] top-1/2 transform -translate-y-1/2 flex flex-col gap-5 bg-black/50 p-2.5 rounded-[30px] hidden md:flex z-50 animate-slide-in-right"
+      id="section-5"
+      class="section absolute inset-0 z-20 transition-opacity duration-1000 ease-in-out opacity-100"
+      data-index="5"
+    >
+      <Contact />
+    </div>
+
+    <!-- Footer Section (Z-0: Bottom) -->
+    <div
+      id="section-6"
+      class="section absolute inset-0 z-0 transition-opacity duration-1000 ease-in-out opacity-100"
+      data-index="6"
+    >
+      <Footer />
+    </div>
+
+    <!-- Navigation Dots (Z-60: Above everything) -->
+    <div
+      class="absolute right-[35px] top-1/2 transform -translate-y-1/2 flex flex-col gap-5 bg-black/50 p-2.5 rounded-[30px] hidden md:flex z-80 animate-slide-in-right"
     >
       <button
         class="nav-dot w-3 h-3 rounded-full transition-all duration-300 bg-white cursor-pointer"
@@ -79,6 +99,14 @@ import Experience from "../components/Experience.astro";
         class="nav-dot w-3 h-3 rounded-full transition-all duration-300 bg-[#ddd] opacity-50 cursor-pointer"
         data-target="4"
         aria-label="Go to Experience section"></button>
+      <button
+        class="nav-dot w-3 h-3 rounded-full transition-all duration-300 bg-[#ddd] opacity-50 cursor-pointer"
+        data-target="5"
+        aria-label="Go to Contact section"></button>
+      <button
+        class="nav-dot w-3 h-3 rounded-full transition-all duration-300 bg-[#ddd] opacity-50 cursor-pointer"
+        data-target="6"
+        aria-label="Go to Footer section"></button>
     </div>
   </main>
 </Layout>

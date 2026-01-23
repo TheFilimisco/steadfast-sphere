@@ -55,13 +55,22 @@ export const ui = {
     //Projects
     "projects.title": "Projects",
     //Contact
-    "contact.title": "Contact Me",
+    "contact.title": "I would like contact with you",
     "contact.form.name": "Name",
+    "contact.form.surname": "Surname",
     "contact.form.email": "Email",
-    "contact.form.request": "Request",
-    "contact.form.button": "Send",
+    "contact.form.request": "Message",
+    "contact.form.button": "Submit",
+
     //Footer
     "footer.copyright": "All rights reserved.",
+    "footer.title": "Is it the end?...",
+    "footer.github.practice": "Github Practice",
+    "footer.github.personal": "Github Personal",
+    "footer.email": "Email",
+    "footer.linkedin": "Linkedin",
+    "footer.instagram": "Instagram",
+    "footer.cv": "CV",
   },
   es: {
     //header
@@ -70,20 +79,19 @@ export const ui = {
     "header.title.span": "Arte",
     "header.is": "está",
     "header.everywhere": "en todas partes",
-    "header.subtitle": " esta en todas partes",
+    "header.subtitle": " está en todas partes",
     "header.text": "Incluso en tu",
-    "header.text.span": "pagina web",
+    "header.text.span": "sitio web",
     //about
     "about.title": "Inicio",
-    "about.question": "¿Quieres saber sobre mí?",
+    "about.question": "¿Quieres saber más sobre mí?",
     "about.hello": "Hola, soy",
     "about.name": "TheFilimisco",
     "about.subtitle": "Desarrollador FullStack y Artista",
-    "about.texto": `Soy un desarrollador full-stack con un toque artístico. Me encanta darle vida a sitios web y aplicaciones móviles con estilo. Tambien tengo conocimientos en bases de datos, actualmente estudio desarrollo de software (DAM) y estoy obsesionado con el arte y la programación.`,
+    "about.texto": `Soy un desarrollador full-stack con un toque artístico. Me encanta dar vida a sitios web y aplicaciones móviles con estilo. Me gustan las bases de datos, actualmente estudio desarrollo de software (DAM) y estoy seriamente obsesionado con el arte y el código.`,
     "about.cv": "Descargar CV",
     "about.cv.url": "/cv/es.pdf",
     "about.contact": "Contáctame",
-
     //Skills
     "skills.title": "¿Y sobre mis habilidades?...",
     "skills.frontend": "Frontend",
@@ -91,37 +99,43 @@ export const ui = {
     "skills.softskills": "Habilidades Blandas",
     "skills.list": "es",
 
-
     //SoftSkills
-    "softskills.brain": "Inteligencia emocional",
+    "softskills.brain": "Inteligencia Emocional",
     "softskills.paint": "Creatividad",
-    "softskills.puzzle": "Resolución de problemas",
-    "softskills.social": "Trabajo en equipo",
+    "softskills.puzzle": "Resolución de Problemas",
+    "softskills.social": "Trabajo en Equipo",
     "softskills.talk": "Comunicación",
-
-
 
     //Experience
     "experience.title": "Mi Experiencia",
-    "experience.job1.title": "Ingeniero de Software",
-    "experience.job1.company": "Google Inc",
-    "experience.job1.date": "2024 - Presente",
-    "experience.job1.desc": "Desarrollando aplicaciones web escalables y trabajando con tecnologías en la nube.",
-    "experience.job2.title": "Desarrollador FullStack",
-    "experience.job2.company": "Persuit",
-    "experience.job2.date": "2022 - 2024",
-    "experience.job2.desc": "Construí soluciones full-stack usando React, Node.js y PostgreSQL.",
+    "experience.job1.title": "Desarrollador FullStack",
+    "experience.job1.company": "Softwarengineering",
+    "experience.job1.date": "Marzo - Junio 2024",
+    "experience.job1.desc": "<ul><li>Desarrollo y documentación de APIs RESTful para aplicaciones web.</li><li>Diseño, implementación y gestión de bases de datos relacionales.</li><li>Consumo e integración de APIs externas en proyectos full-stack.</li></ul>",
+
+    "experience.job2.title": "Desarrollador Frontend",
+    "experience.job2.company": "Persuadis",
+    "experience.job2.date": "Septiembre 2025 - Actualidad",
+    "experience.job2.desc": "<ul><li>Creación y maquetación de landing pages responsivas utilizando HTML, CSS y JavaScript.</li><li>Desarrollo de elementos web interactivos e interfaces de usuario.</li><li>Integración básica de funcionalidades dinámicas con PHP.</li><li>Optimización de código y estructura para mejorar la experiencia de usuario.</li><li>Colaboración en diseño visual y pruebas de usabilidad.</li></ul>",
 
     //Projects
     "projects.title": "Proyectos",
     //Contact
-    "contact.title": "Contacto",
+    "contact.title": "Me gustaría contactar contigo",
     "contact.form.name": "Nombre",
+    "contact.form.surname": "Apellidos",
     "contact.form.email": "Correo",
-    "contact.form.request": "Escribe tu duda aqui...",
+    "contact.form.request": "Mensaje",
     "contact.form.button": "Enviar",
     //Footer
     "footer.copyright": "Todos los derechos reservados.",
+    "footer.title": "¿Es el final?...",
+    "footer.github.practice": "Github Práctica",
+    "footer.github.personal": "Github Personal",
+    "footer.email": "Correo",
+    "footer.linkedin": "Linkedin",
+    "footer.instagram": "Instagram",
+    "footer.cv": "CV",
   },
   ca: {
     //header
@@ -131,16 +145,16 @@ export const ui = {
     "header.is": "és",
     "header.everywhere": "a tot arreu",
     "header.subtitle": " és a tot arreu",
-    "header.text": "Fins i tot a la teva",
-    "header.text.span": "pàgina web",
+    "header.text": "Fins i tot al teu",
+    "header.text.span": "lloc web",
 
     //about
     "about.title": "Inici",
-    "about.question": "¿Vols saber sobre mi?",
+    "about.question": "Vols saber més sobre mi?",
     "about.hello": "Hola, sóc",
     "about.name": "TheFilimisco",
     "about.subtitle": "Desenvolupador FullStack i Artista",
-    "about.texto": `Sóc un desenvolupador full-stack amb un toc artístic. M'encanta donar vida a llocs web i aplicacions mòbils amb estil. També tinc coneixements en bases de dades, actualment estudio desenvolupament de software (DAM) i estic obsessionat amb l'art i la programació.`,
+    "about.texto": `Sóc un desenvolupador full-stack amb un toc artístic. M'encanta donar vida a llocs web i aplicacions mòbils amb estil. M'interessen les bases de dades, actualment estudio desenvolupament de programari (DAM) i estic seriosament obsessionat amb l'art i el codi.`,
     "about.cv": "Descarregar CV",
     "about.cv.url": "/cv/ca.pdf",
     "about.contact": "Contacta'm",
@@ -152,40 +166,44 @@ export const ui = {
     "skills.softskills": "Habilitats Toves",
     "skills.list": "ca", // 'ca' és el codi per català
 
-
-
     //SoftSkills
-    "softskills.brain": "Intel·ligència emocional",
+    "softskills.brain": "Intel·ligència Emocional",
     "softskills.paint": "Creativitat",
-    "softskills.puzzle": "Resolució de problemes",
-    "softskills.social": "Treball en equip",
+    "softskills.puzzle": "Resolució de Problemes",
+    "softskills.social": "Treball en Equip",
     "softskills.talk": "Comunicació",
-
-
-
 
     //Experience
     "experience.title": "La meva Experiència",
-    "experience.job1.title": "Enginyer de Software",
-    "experience.job1.company": "Google Inc",
-    "experience.job1.date": "2024 - Present",
-    "experience.job1.desc": "Desenvolupant aplicacions web escalables i treballant amb tecnologies al núvol.",
-    "experience.job2.title": "Desenvolupador FullStack",
-    "experience.job2.company": "Persuit",
-    "experience.job2.date": "2022 - 2024",
-    "experience.job2.desc": "Vaig construir solucions full-stack utilitzant React, Node.js i PostgreSQL.",
+    "experience.job1.title": "Desenvolupador FullStack",
+    "experience.job1.company": "Softwarengineering",
+    "experience.job1.date": "Març - Juny 2024",
+    "experience.job1.desc": "<ul><li>Desenvolupament i documentació d'APIs RESTful per a aplicacions web.</li><li>Disseny, implementació i gestió de bases de dades relacionals.</li><li>Consum i integració d'APIs externes en projectes full-stack.</li></ul>",
+
+    "experience.job2.title": "Desenvolupador Frontend",
+    "experience.job2.company": "Persuadis",
+    "experience.job2.date": "Setembre 2025 - Actualitat",
+    "experience.job2.desc": "<ul><li>Creació i maquetació de landing pages responsives utilitzant HTML, CSS i JavaScript.</li><li>Desenvolupament d'elements web interactius i interfícies d'usuari.</li><li>Integració bàsica de funcionalitats dinàmiques amb PHP.</li><li>Optimització de codi i estructura per millorar l'experiència d'usuari.</li><li>Col·laboració en disseny visual i proves d'usabilitat.</li></ul>",
 
     //Projects
     "projects.title": "Projectes",
 
     //Contact
-    "contact.title": "Contacte",
+    "contact.title": "M'agradaria contactar amb tu",
     "contact.form.name": "Nom",
+    "contact.form.surname": "Cognoms",
     "contact.form.email": "Correu",
-    "contact.form.request": "Escriu el teu dubte aquí...",
+    "contact.form.request": "Missatge",
     "contact.form.button": "Enviar",
 
     //Footer
     "footer.copyright": "Tots els drets reservats.",
+    "footer.title": "¿És el final?...",
+    "footer.github.practice": "Github Pràctica",
+    "footer.github.personal": "Github Personal",
+    "footer.email": "Correu",
+    "footer.linkedin": "Linkedin",
+    "footer.instagram": "Instagram",
+    "footer.cv": "CV",
   },
 };

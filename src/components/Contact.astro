@@ -1,0 +1,127 @@
+---
+import { Image } from "astro:assets";
+import { ui, defaultLang } from "../utils/i18n/ui";
+import contactBg from "../assets/contact-bg.jpg";
+const lang = (Astro.currentLocale || defaultLang) as keyof typeof ui;
+const t = ui[lang] || ui[defaultLang as keyof typeof ui];
+---
+
+<section
+    class="h-screen w-full relative overflow-hidden flex flex-col items-center justify-center py-[40px] px-4 md:px-[120px]"
+>
+    <!-- Background Image -->
+    <div class="absolute inset-0 z-0">
+        <!-- Using Home.jpg as a placeholder for the sketch background seen in Figma -->
+        <Image
+            src={contactBg}
+            alt="Background"
+            class="w-full h-full object-cover"
+        />
+        <div class="absolute inset-0 bg-black/30"></div>
+    </div>
+
+    <div
+        class="relative z-10 w-full max-w-[1440px] flex flex-col items-center h-full justify-center"
+    >
+        <!-- Title -->
+        <div class="w-full text-center mb-8 md:mb-12 animate-slide-in-fall">
+            <h2
+                class="font-bonny font-medium text-[30px] md:text-[50px] text-black text-center leading-tight"
+            >
+                {t["contact.title"]}
+            </h2>
+        </div>
+
+        <!-- Content Container -->
+        <div class="w-full flex justify-center md:justify-end pr-0 md:pr-20">
+            <!-- Red Form Box -->
+            <div
+                class="w-full max-w-md p-8 md:p-10 bg-[#9E3939] rounded-none shadow-2xl animate-slide-in-right"
+            >
+                <form id="contact-form" class="flex flex-col gap-5">
+                    <!-- Name -->
+                    <div class="flex flex-col gap-1">
+                        <label
+                            for="name"
+                            class="text-white font-manrope text-sm opacity-90 pl-1"
+                            >{t["contact.form.name"]}</label
+                        >
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            class="w-full px-4 py-2.5 rounded-[5px] bg-gray-50 border-none focus:ring-0 text-gray-800 font-manrope"
+                            placeholder="Value"
+                            required
+                        />
+                    </div>
+
+                    <!-- Surname -->
+                    <div class="flex flex-col gap-1">
+                        <label
+                            for="surname"
+                            class="text-white font-manrope text-sm opacity-90 pl-1"
+                            >{t["contact.form.surname"]}</label
+                        >
+                        <input
+                            type="text"
+                            id="surname"
+                            name="surname"
+                            class="w-full px-4 py-2.5 rounded-[5px] bg-gray-50 border-none focus:ring-0 text-gray-800 font-manrope"
+                            placeholder="Value"
+                            required
+                        />
+                    </div>
+
+                    <!-- Email -->
+                    <div class="flex flex-col gap-1">
+                        <label
+                            for="email"
+                            class="text-white font-manrope text-sm opacity-90 pl-1"
+                            >{t["contact.form.email"]}</label
+                        >
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            class="w-full px-4 py-2.5 rounded-[5px] bg-gray-50 border-none focus:ring-0 text-gray-800 font-manrope"
+                            placeholder="Value"
+                            required
+                        />
+                    </div>
+
+                    <!-- Message -->
+                    <div class="flex flex-col gap-1">
+                        <label
+                            for="request"
+                            class="text-white font-manrope text-sm opacity-90 pl-1"
+                            >{t["contact.form.request"]}</label
+                        >
+                        <textarea
+                            id="request"
+                            name="request"
+                            rows="3"
+                            class="w-full px-4 py-2.5 rounded-[5px] bg-gray-50 border-none focus:ring-0 text-gray-800 font-manrope resize-none"
+                            placeholder="Value"
+                            required></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="flex flex-col items-center mt-2 gap-2">
+                        <button
+                            type="submit"
+                            class="px-10 py-2.5 bg-[#3E2b26] text-white font-medium hover:bg-black transition-colors font-manrope rounded-[5px] shadow-md"
+                        >
+                            {t["contact.form.button"]}
+                        </button>
+                        <p
+                            id="form-status"
+                            class="text-white text-sm font-manrope text-center"
+                        >
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
