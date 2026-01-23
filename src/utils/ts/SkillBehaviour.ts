@@ -56,3 +56,4 @@ function setupSkillBehavior(elementId: string) {
 
 setupSkillBehavior("frontend-skill");
 setupSkillBehavior("backend-skill");
+setupSkillBehavior("softskill-skill");

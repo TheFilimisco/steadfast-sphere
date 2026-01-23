@@ -30,6 +30,13 @@ export const ui = {
     "skills.softskills": "SoftSkills",
     "skills.list": "en",
 
+    //SoftSkills
+    "softskills.brain": "Emotional Intelligence",
+    "softskills.paint": "Creativity",
+    "softskills.puzzle": "Problem Solving",
+    "softskills.social": "Team Work",
+    "softskills.talk": "Communication",
+
     //Projects
     "projects.title": "Projects",
     //Contact
@@ -68,6 +75,16 @@ export const ui = {
     "skills.backend": "Backend",
     "skills.softskills": "Habilidades Blandas",
     "skills.list": "es",
+
+
+    //SoftSkills
+    "softskills.brain": "Inteligencia emocional",
+    "softskills.paint": "Creatividad",
+    "softskills.puzzle": "Resolución de problemas",
+    "softskills.social": "Trabajo en equipo",
+    "softskills.talk": "Comunicación",
+
+
     //Projects
     "projects.title": "Proyectos",
     //Contact
@@ -107,6 +124,17 @@ export const ui = {
     "skills.backend": "Backend",
     "skills.softskills": "Habilitats Toves",
     "skills.list": "ca", // 'ca' és el codi per català
+
+
+
+    //SoftSkills
+    "softskills.brain": "Intel·ligència emocional",
+    "softskills.paint": "Creativitat",
+    "softskills.puzzle": "Resolució de problemes",
+    "softskills.social": "Treball en equip",
+    "softskills.talk": "Comunicació",
+
+
 
     //Projects
     "projects.title": "Projectes",

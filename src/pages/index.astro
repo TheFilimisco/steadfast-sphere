@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero.astro";
 import AboutMe from "../components/AboutMe.astro";
 import Skills from "../components/Skills.astro";
+import Projects from "../components/Projects.astro";
 ---
 
 <Layout>
@@ -11,7 +12,7 @@ import Skills from "../components/Skills.astro";
     <!-- Hero Section (Z-20: Top) -->
     <div
       id="section-0"
-      class="section absolute inset-0 z-20 transition-opacity duration-1000 ease-in-out opacity-100"
+      class="section absolute inset-0 z-30 transition-opacity duration-1000 ease-in-out opacity-100"
       data-index="0"
     >
       <Hero />
@@ -20,7 +21,7 @@ import Skills from "../components/Skills.astro";
     <!-- Info Section (Z-10: Behind Hero) -->
     <div
       id="section-1"
-      class="section absolute inset-0 z-10 transition-opacity duration-1000 ease-in-out opacity-100"
+      class="section absolute inset-0 z-20 transition-opacity duration-1000 ease-in-out opacity-100"
       data-index="1"
     >
       <AboutMe />
@@ -29,10 +30,19 @@ import Skills from "../components/Skills.astro";
     <!-- Skills Section (Z-0: Bottom) -->
     <div
       id="section-2"
-      class="section absolute inset-0 z-0 transition-opacity duration-1000 ease-in-out opacity-100"
+      class="section absolute inset-0 z-10 transition-opacity duration-1000 ease-in-out opacity-100"
       data-index="2"
     >
       <Skills />
+    </div>
+
+    <!-- Projects Section (Z-0: Bottom) -->
+    <div
+      id="section-3"
+      class="section absolute inset-0 z-0 transition-opacity duration-1000 ease-in-out opacity-100"
+      data-index="3"
+    >
+      <Projects />
     </div>
 
     <!-- Navigation Dots (Z-50: Above everything) -->
@@ -51,6 +61,10 @@ import Skills from "../components/Skills.astro";
         class="nav-dot w-3 h-3 rounded-full transition-all duration-300 bg-[#ddd] opacity-50 cursor-pointer"
         data-target="2"
         aria-label="Go to Skills section"></button>
+      <button
+        class="nav-dot w-3 h-3 rounded-full transition-all duration-300 bg-[#ddd] opacity-50 cursor-pointer"
+        data-target="3"
+        aria-label="Go to Projects section"></button>
     </div>
   </main>
 </Layout>

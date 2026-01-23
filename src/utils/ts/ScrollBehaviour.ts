@@ -1,6 +1,6 @@
 // State
 let currentStep = 0;
-const totalSections = 3; // Hero, Info
+const totalSections = 4; // Hero, Info, Skills, Projects
 let isAnimating = false;
 
 const sections = document.querySelectorAll(
