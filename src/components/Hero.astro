@@ -31,6 +31,9 @@ const t = ui[lang] || ui[defaultLang as keyof typeof ui];
             <h1
                 class="font-bonny font-bold text-[80px] md:text-[180px] leading-[0.8] md:leading-[0.9] text-bg-off-white drop-shadow-lg"
             >
+                <span class="text-bg-off-white"
+                    >{t["header.title.article"]}</span
+                >
                 <span
                     class="text-black bg-bg-off-white px-4 py-2 hover:bg-accent-dark hover:text-bg-off-white transition-colors duration-300 ease-in-out inline-block -rotate-3"
                     >{t["header.title.span"]}</span
@@ -59,17 +62,17 @@ const t = ui[lang] || ui[defaultLang as keyof typeof ui];
             class="text-bg-off-white text-[24px] md:text-[40px] px-4 py-2 font-bonny font-medium flex items-center gap-1"
         >
             <div
-                class="px-2 hover:bg-accent-dark hover:text-black transition-colors duration-300 ease-in-out"
+                class="px-2 hover:bg-accent-dark hover:text-bg-off-white transition-colors duration-300 ease-in-out"
             >
                 <a href="/">EN</a>
             </div>
             | <div
-                class="px-2 hover:bg-accent-dark hover:text-black transition-colors duration-300 ease-in-out"
+                class="px-2 hover:bg-accent-dark hover:text-bg-off-white transition-colors duration-300 ease-in-out"
             >
                 <a href="/es">ES </a>
             </div>
             | <div
-                class="px-2 hover:bg-accent-dark hover:text-black transition-colors duration-300 ease-in-out"
+                class="px-2 hover:bg-accent-dark hover:text-bg-off-white transition-colors duration-300 ease-in-out"
             >
                 <a href="/ca">CA</a>
             </div>

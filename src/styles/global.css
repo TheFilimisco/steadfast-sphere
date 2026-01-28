@@ -9,8 +9,8 @@
 }
 
 @font-face {
-    font-family: 'Pilcrow Rounded';
-    src: url('/fonts/PilcrowRounded-Variable.ttf') format('truetype');
+    font-family: 'Instrument Sans';
+    src: url('/fonts/InstrumentSans-Variable.ttf') format('truetype');
     font-weight: 100 900;
     font-style: normal;
     font-display: swap;
@@ -22,7 +22,7 @@
     --color-bg-off-white: #fcfbfb;
 
     --font-bonny: 'Bonny', sans-serif;
-    --font-pilcrow: 'Pilcrow Rounded', sans-serif;
+    --font-instrument: 'Instrument Sans', sans-serif;
 
     --animate-fade-out-layer: fade-out-layer 4s forwards;
     --animate-slide-in-fall: slide-in-fall 1s ease-out forwards;
@@ -107,6 +107,12 @@
     }
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 html,
 body {
     overscroll-behavior: none;
@@ -134,4 +140,17 @@ h6,
 p {
     user-select: text;
     cursor: auto;
+}
+
+p {
+    font-family: var(--font-instrument);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-bonny);
 }

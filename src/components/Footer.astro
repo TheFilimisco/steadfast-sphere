@@ -51,12 +51,12 @@ const socialLinks = [
 ---
 
 <section
-    class="h-screen w-full relative overflow-hidden flex flex-col items-center justify-center py-[40px] px-4 bg-black"
+    class="h-screen w-full relative overflow-hidden flex flex-col items-center justify-center py-[40px] px-4 bg-bg-off-white"
 >
     <!-- Title -->
     <div class="mb-20 md:mb-32 animate-slide-in-fall text-center">
         <h2
-            class="font-bonny font-normal text-[40px] md:text-[60px] text-[#fcfbfb] leading-tight"
+            class="font-bonny font-normal text-[40px] md:text-[60px] text-accent-dark leading-tight"
         >
             {t["footer.title"]}
         </h2>
@@ -83,7 +83,7 @@ const socialLinks = [
                             <path d={link.iconPath} />
                         </svg>
                     </div>
-                    <div class="flex flex-col items-center text-[#fcfbfb] font-pilcrow font-medium text-[18px] md:text-[24px]">
+                    <div class="flex flex-col items-center text-accent-dark font-pilcrow font-medium text-[18px] md:text-[24px]">
                         <span class="text-center">
                             {t[`footer.${link.name}` as keyof typeof t]}
                         </span>

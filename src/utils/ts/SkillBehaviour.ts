@@ -6,6 +6,15 @@ function setupSkillBehavior(elementId: string) {
     const activeView = skillElement.querySelector(".skill-active") as HTMLElement;
 
     if (defaultView && activeView) {
+        // Check for mobile on init
+        if (window.innerWidth < 768) {
+            defaultView.classList.add("hidden");
+            defaultView.classList.remove("flex");
+
+            activeView.classList.remove("hidden");
+            activeView.classList.add("grid");
+        }
+
         skillElement.addEventListener("click", () => {
             const isDefaultVisible = !defaultView.classList.contains("hidden");
 
@@ -20,7 +29,7 @@ function setupSkillBehavior(elementId: string) {
                     defaultView.classList.remove("flex");
 
                     activeView.classList.remove("hidden");
-                    activeView.classList.add("flex");
+                    activeView.classList.add("grid");
                     // Ensure it starts invisible for fade in
                     activeView.classList.add("opacity-0");
 
@@ -37,7 +46,7 @@ function setupSkillBehavior(elementId: string) {
                 // 2. Wait for fade out, then swap
                 setTimeout(() => {
                     activeView.classList.add("hidden");
-                    activeView.classList.remove("flex");
+                    activeView.classList.remove("grid");
 
                     defaultView.classList.remove("hidden");
                     defaultView.classList.add("flex");

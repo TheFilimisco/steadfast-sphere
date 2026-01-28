@@ -19,7 +19,7 @@ export const ui = {
     "about.hello": "Hello, I'm",
     "about.name": "TheFilimisco",
     "about.subtitle": "FullStack Developer and Artist",
-    "about.texto": `I'm a full-stack developer with an artistic twist. I love bringing websites and mobile apps to life with style. I'm into databases, currently studying software development (DAM), and seriously obsessed with art and code.`,
+    "about.texto": `I’m a full-stack developer with an artistic touch. I love bringing websites and mobile applications to life with a unique style.`,
     "about.cv": "Download CV",
     "about.cv.url": "/cv/en.pdf",
     "about.contact": "Contact Me",
@@ -88,7 +88,7 @@ export const ui = {
     "about.hello": "Hola, soy",
     "about.name": "TheFilimisco",
     "about.subtitle": "Desarrollador FullStack y Artista",
-    "about.texto": `Soy un desarrollador full-stack con un toque artístico. Me encanta dar vida a sitios web y aplicaciones móviles con estilo. Me gustan las bases de datos, actualmente estudio desarrollo de software (DAM) y estoy seriamente obsesionado con el arte y el código.`,
+    "about.texto": `Soy un desarrollador full-stack con un toque artístico. Me encanta dar vida a sitios web y aplicaciones móviles con un estilo único.`,
     "about.cv": "Descargar CV",
     "about.cv.url": "/cv/es.pdf",
     "about.contact": "Contáctame",
@@ -96,7 +96,7 @@ export const ui = {
     "skills.title": "¿Y sobre mis habilidades?...",
     "skills.frontend": "Frontend",
     "skills.backend": "Backend",
-    "skills.softskills": "Habilidades Blandas",
+    "skills.softskills": "SoftSkills",
     "skills.list": "es",
 
     //SoftSkills
@@ -154,7 +154,7 @@ export const ui = {
     "about.hello": "Hola, sóc",
     "about.name": "TheFilimisco",
     "about.subtitle": "Desenvolupador FullStack i Artista",
-    "about.texto": `Sóc un desenvolupador full-stack amb un toc artístic. M'encanta donar vida a llocs web i aplicacions mòbils amb estil. M'interessen les bases de dades, actualment estudio desenvolupament de programari (DAM) i estic seriosament obsessionat amb l'art i el codi.`,
+    "about.texto": `Soc un desenvolupador full-stack amb un toc artístic. M’encanta donar vida a llocs web i aplicacions mòbils amb un estil únic.`,
     "about.cv": "Descarregar CV",
     "about.cv.url": "/cv/ca.pdf",
     "about.contact": "Contacta'm",
@@ -163,7 +163,7 @@ export const ui = {
     "skills.title": "I sobre les meves habilitats?...",
     "skills.frontend": "Frontend",
     "skills.backend": "Backend",
-    "skills.softskills": "Habilitats Toves",
+    "skills.softskills": "SoftSkills",
     "skills.list": "ca", // 'ca' és el codi per català
 
     //SoftSkills
