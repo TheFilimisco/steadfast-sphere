@@ -9,86 +9,86 @@ const t = ui[lang] || ui[defaultLang as keyof typeof ui];
 ---
 
 <section
-    class="h-screen w-full relative overflow-hidden bg-bg-off-white flex items-center justify-center py-[40px] px-4 md:px-[120px]"
+  class="h-dvh w-full relative overflow-hidden bg-bg-off-white flex items-center justify-center py-[40px] px-4 md:px-[120px]"
 >
-    <!-- Background Blob -->
-    <div
-        class="absolute top-1/2 left-0 transform -translate-y-1/2 -translate-x-[20%] w-[150%] h-[150%] z-0 pointer-events-none opacity-50 md:opacity-100 animate-fade-extend"
-    >
-        <Image src={infoBlob} alt="" class="w-full h-full object-contain" />
+  <!-- Background Blob -->
+  <div
+    class="absolute top-1/2 left-0 transform -translate-y-1/2 -translate-x-[20%] w-[150%] h-[150%] z-0 pointer-events-none opacity-50 md:opacity-100 animate-fade-extend"
+  >
+    <Image src={infoBlob} alt="" class="w-full h-full object-contain" />
+  </div>
+
+  <!-- Content Container -->
+  <div
+    class="relative z-10 w-full max-w-[1440px] flex flex-col items-center gap-5 h-full justify-center"
+  >
+    <!-- Header -->
+    <div class="w-full text-center animate-slide-in-fall">
+      <h2
+        class="font-bonny font-medium text-[30px] md:text-[40px] text-accent-dark"
+      >
+        {t["about.question"]}
+      </h2>
     </div>
 
-    <!-- Content Container -->
+    <!-- Main Content Area -->
     <div
-        class="relative z-10 w-full max-w-[1440px] flex flex-col items-center gap-10 h-full justify-center"
+      class="flex flex-col items-center md:flex-row md:items-stretch justify-center gap-10 w-full h-auto md:h-[653px]"
     >
-        <!-- Header -->
-        <div class="w-full text-center animate-slide-in-fall">
-            <h2
-                class="font-bonny font-medium text-[30px] md:text-[40px] text-accent-dark"
-            >
-                {t["about.question"]}
-            </h2>
-        </div>
-
-        <!-- Main Content Area -->
+      <!-- Left Side (Image) -->
+      <div
+        class="relative flex-1 flex items-center justify-center md:items-start md:justify-end animate-slide-in-left"
+      >
         <div
-            class="flex flex-col items-center md:flex-row md:items-stretch justify-center gap-10 w-full h-auto md:h-[653px]"
+          class="relative w-[200px] h-[250px] md:w-[391px] md:h-[449px] rounded-[20px] overflow-hidden shadow-xl"
         >
-            <!-- Left Side (Image) -->
-            <div
-                class="relative flex-1 flex items-center justify-center md:items-start md:justify-end animate-slide-in-left"
-            >
-                <div
-                    class="relative w-[300px] h-[350px] md:w-[391px] md:h-[449px] rounded-[20px] overflow-hidden shadow-xl"
-                >
-                    <Image
-                        src={infoProfile}
-                        alt="Profile"
-                        class="w-full h-full object-cover"
-                    />
-                </div>
-            </div>
-
-            <!-- Right Side (Text) -->
-            <div
-                class="flex-1 flex flex-col justify-center items-center md:items-start pl-0 md:pl-10 text-center md:text-left animate-slide-in-right"
-            >
-                <div class="relative mb-6">
-                    <h3
-                        class="font-bonny font-bold text-[40px] md:text-[50px] leading-tight relative z-10"
-                    >
-                        {t["about.hello"]}
-                        <br />
-                        <span class="text-accent-dark">{t["about.name"]}</span>
-                    </h3>
-                </div>
-
-                <div
-                    class="prose max-w-md text-lg text-gray-700 font-pilcrow font-medium"
-                >
-                    <p>
-                        {t["about.texto"]}
-                    </p>
-                </div>
-
-                <!-- Contact / Socials Placeholder -->
-                <div class="mt-8 flex gap-4 font-pilcrow">
-                    <a
-                        href="#section-5"
-                        class="px-6 py-2 bg-black text-white rounded-full hover:bg-accent-dark hover:cursor-pointer transition"
-                        >{t["about.contact"]}</a
-                    >
-                    <a
-                        href={t["about.cv.url"]}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="px-6 py-2 bg-black text-white rounded-full hover:bg-accent-dark hover:cursor-pointer transition"
-                        >{t["about.cv"]}</a
-                    >
-                    <!-- Icons would go here -->
-                </div>
-            </div>
+          <Image
+            src={infoProfile}
+            alt="Profile"
+            class="w-full h-full object-cover"
+          />
         </div>
+      </div>
+
+      <!-- Right Side (Text) -->
+      <div
+        class="flex-1 flex flex-col justify-center items-center md:items-start pl-0 md:pl-10 text-center md:text-left animate-slide-in-right"
+      >
+        <div class="relative mb-6">
+          <h3
+            class="font-bonny font-bold text-[40px] md:text-[50px] leading-tight relative z-10"
+          >
+            {t["about.hello"]}
+            <br />
+            <span class="text-accent-dark">{t["about.name"]}</span>
+          </h3>
+        </div>
+
+        <div
+          class="prose max-w-md text-lg text-gray-700 font-pilcrow font-medium"
+        >
+          <p>
+            {t["about.texto"]}
+          </p>
+        </div>
+
+        <!-- Contact / Socials Placeholder -->
+        <div class="mt-8 flex gap-4 font-pilcrow">
+          <a
+            href="#section-5"
+            class="px-6 py-2 bg-black text-white rounded-full hover:bg-accent-dark hover:cursor-pointer transition"
+            >{t["about.contact"]}</a
+          >
+          <a
+            href={t["about.cv.url"]}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="px-6 py-2 bg-black text-white rounded-full hover:bg-accent-dark hover:cursor-pointer transition"
+            >{t["about.cv"]}</a
+          >
+          <!-- Icons would go here -->
+        </div>
+      </div>
     </div>
+  </div>
 </section>
