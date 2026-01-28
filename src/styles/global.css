@@ -107,6 +107,12 @@
     }
 }
 
+html,
+body {
+    overscroll-behavior: none;
+}
+
+
 /* Global Selection Style */
 ::selection {
     background-color: var(--color-accent-dark);

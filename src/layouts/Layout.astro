@@ -6,22 +6,22 @@ import profileIcon from "../assets/profile.svg";
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href={profileIcon.src} />
-		<meta name="generator" content={Astro.generator} />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href={profileIcon.src} />
+    <meta name="generator" content={Astro.generator} />
 
-		<title>TheFilimisco</title>
-	</head>
-	<body class="bg-bg-off-white">
-		<LayerBackground />
-		<slot />
-	</body>
-	<script>
-		import "../utils/ts/ScrollBehaviour.ts";
-		import "../utils/ts/SkillBehaviour.ts";
-		import "../utils/ts/ProjectsBehaviour.ts";
-		import "../utils/ts/FormSubmission.ts";
-	</script>
+    <title>TheFilimisco</title>
+  </head>
+  <body class="bg-bg-off-white">
+    <LayerBackground />
+    <slot />
+  </body>
+  <script>
+    import "../utils/ts/ScrollBehaviour.ts";
+    import "../utils/ts/SkillBehaviour.ts";
+    import "../utils/ts/ProjectsBehaviour.ts";
+    import "../utils/ts/FormSubmission.ts";
+  </script>
 </html>

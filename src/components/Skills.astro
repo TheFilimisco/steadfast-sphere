@@ -25,278 +25,278 @@ const t = ui[lang] || ui[defaultLang as keyof typeof ui];
 ---
 
 <section
-    class="h-screen w-full relative overflow-hidden bg-accent-dark flex flex-col items-center justify-center py-[40px] px-4 md:px-[120px]"
+  class="h-dvh w-full relative overflow-hidden bg-accent-dark flex flex-col items-center justify-center py-[40px] px-4 md:px-[120px]"
 >
-    <!-- Header -->
-    <div class="mb-10 md:mb-20 animate-slide-in-fall">
-        <h2
-            class="font-bonny font-medium text-[30px] md:text-[40px] text-bg-off-white text-center"
+  <!-- Header -->
+  <div class="mb-10 md:mb-20 animate-slide-in-fall">
+    <h2
+      class="font-bonny font-medium text-[30px] md:text-[40px] text-bg-off-white text-center"
+    >
+      {t["skills.title"]}
+    </h2>
+  </div>
+
+  <!-- Skills Container -->
+  <div class="w-full max-w-[1440px] flex flex-col gap-8 md:gap-16">
+    <!-- Frontend (Left) -->
+    <div
+      id="frontend-skill"
+      class="flex justify-start w-full animate-slide-in-left cursor-pointer group hover:bg-accent-light rounded-[40px] transition-all duration-300"
+    >
+      <!-- Default View -->
+      <div
+        class="hidden md:flex skill-default bg-transparent border-2 border-transparent px-4 md:px-[50px] py-2 md:py-[30px] items-center transition-all duration-300"
+      >
+        <p
+          class="font-pilcrow text-[24px] md:text-[60px] text-bg-off-white leading-normal"
         >
-            {t["skills.title"]}
-        </h2>
+          {t["skills.frontend"]}
+        </p>
+      </div>
+
+      <!-- Active View (Hidden by default) -->
+      <div
+        class="skill-active grid hidden bg-bg-off-white rounded-[40px] w-full px-4 md:px-[50px] py-2 md:py-[30px] grid-cols-3 md:grid-cols-6 items-center justify-evenly gap-4 md:gap-8 transition-all duration-300"
+      >
+        <!-- HTML -->
+        <div class="flex flex-col items-center gap-2 group/icon">
+          <div
+            class="w-10 h-10 md:w-16 md:h-16 flex-shrink-0 text-black transition-colors duration-300 hover:text-[#E34F26] [&>svg]:w-full [&>svg]:h-full"
+            set:html={htmlIcon}
+          />
+          <span
+            class="text-black font-medium text-xs md:text-sm transition-colors duration-300 group-hover/icon:text-[#E34F26]"
+            >HTML</span
+          >
+        </div>
+        <!-- CSS -->
+        <div class="flex flex-col items-center gap-2 group/icon">
+          <div
+            class="w-10 h-10 md:w-16 md:h-16 flex-shrink-0 text-black transition-colors duration-300 hover:text-[#1572B6] [&>svg]:w-full [&>svg]:h-full"
+            set:html={cssIcon}
+          />
+          <span
+            class="text-black font-medium text-xs md:text-sm transition-colors duration-300 group-hover/icon:text-[#1572B6]"
+            >CSS</span
+          >
+        </div>
+        <!-- JS -->
+        <div class="flex flex-col items-center gap-2 group/icon">
+          <div
+            class="w-10 h-10 md:w-16 md:h-16 flex-shrink-0 text-black transition-colors duration-300 hover:text-[#d8c21d] [&>svg]:w-full [&>svg]:h-full"
+            set:html={jsIcon}
+          />
+          <span
+            class="text-black font-medium text-xs md:text-sm transition-colors duration-300 group-hover/icon:text-[#d8c21d]"
+            >JS</span
+          >
+        </div>
+        <!-- React -->
+        <div class="flex flex-col items-center gap-2 group/icon">
+          <div
+            class="w-10 h-10 md:w-16 md:h-16 flex-shrink-0 text-black transition-colors duration-300 hover:text-[#61DAFB] [&>svg]:w-full [&>svg]:h-full"
+            set:html={reactIcon}
+          />
+          <span
+            class="text-black font-medium text-xs md:text-sm transition-colors duration-300 group-hover/icon:text-[#61DAFB]"
+            >React</span
+          >
+        </div>
+        <!-- Figma -->
+        <div class="flex flex-col items-center gap-2 group/icon">
+          <div
+            class="w-10 h-10 md:w-16 md:h-16 flex-shrink-0 text-black transition-colors duration-300 hover:text-[#F24E1E] [&>svg]:w-full [&>svg]:h-full"
+            set:html={figmaIcon}
+          />
+          <span
+            class="text-black font-medium text-xs md:text-sm transition-colors duration-300 group-hover/icon:text-[#F24E1E]"
+            >Figma</span
+          >
+        </div>
+        <!-- Tailwind -->
+        <div class="flex flex-col items-center gap-2 group/icon">
+          <div
+            class="w-10 h-10 md:w-16 md:h-16 flex-shrink-0 text-black transition-colors duration-300 hover:text-[#06B6D4] [&>svg]:w-full [&>svg]:h-full"
+            set:html={tailwindIcon}
+          />
+          <span
+            class="text-black font-medium text-xs md:text-sm transition-colors duration-300 group-hover/icon:text-[#06B6D4]"
+            >Tailwind</span
+          >
+        </div>
+      </div>
     </div>
 
-    <!-- Skills Container -->
-    <div class="w-full max-w-[1440px] flex flex-col gap-8 md:gap-16">
-        <!-- Frontend (Left) -->
-        <div
-            id="frontend-skill"
-            class="flex justify-start w-full animate-slide-in-left cursor-pointer group hover:bg-accent-light rounded-[40px] transition-all duration-300"
+    <!-- Backend (Center) -->
+    <div
+      id="backend-skill"
+      class="flex justify-center w-full animate-slide-in-fall cursor-pointer group hover:bg-accent-light rounded-[40px] transition-all duration-300"
+    >
+      <!-- Default View -->
+      <div
+        class="hidden md:flex skill-default bg-transparent border-2 border-transparent px-4 md:px-[50px] py-2 md:py-[30px] items-center transition-all duration-300"
+      >
+        <p
+          class="font-pilcrow text-[24px] md:text-[60px] text-bg-off-white leading-normal"
         >
-            <!-- Default View -->
-            <div
-                class="skill-default bg-transparent border-2 border-transparent px-4 md:px-[50px] py-2 md:py-[30px] flex items-center transition-all duration-300"
-            >
-                <p
-                    class="font-pilcrow text-[24px] md:text-[60px] text-bg-off-white leading-normal"
-                >
-                    {t["skills.frontend"]}
-                </p>
-            </div>
+          {t["skills.backend"]}
+        </p>
+      </div>
 
-            <!-- Active View (Hidden by default) -->
-            <div
-                class="skill-active grid hidden bg-bg-off-white rounded-[40px] w-full px-4 md:px-[50px] py-2 md:py-[30px] grid-cols-3 md:grid-cols-6 items-center justify-evenly gap-4 md:gap-8 transition-all duration-300"
-            >
-                <!-- HTML -->
-                <div class="flex flex-col items-center gap-2 group/icon">
-                    <div
-                        class="w-10 h-10 md:w-16 md:h-16 flex-shrink-0 text-black transition-colors duration-300 hover:text-[#E34F26] [&>svg]:w-full [&>svg]:h-full"
-                        set:html={htmlIcon}
-                    />
-                    <span
-                        class="text-black font-medium text-xs md:text-sm transition-colors duration-300 group-hover/icon:text-[#E34F26]"
-                        >HTML</span
-                    >
-                </div>
-                <!-- CSS -->
-                <div class="flex flex-col items-center gap-2 group/icon">
-                    <div
-                        class="w-10 h-10 md:w-16 md:h-16 flex-shrink-0 text-black transition-colors duration-300 hover:text-[#1572B6] [&>svg]:w-full [&>svg]:h-full"
-                        set:html={cssIcon}
-                    />
-                    <span
-                        class="text-black font-medium text-xs md:text-sm transition-colors duration-300 group-hover/icon:text-[#1572B6]"
-                        >CSS</span
-                    >
-                </div>
-                <!-- JS -->
-                <div class="flex flex-col items-center gap-2 group/icon">
-                    <div
-                        class="w-10 h-10 md:w-16 md:h-16 flex-shrink-0 text-black transition-colors duration-300 hover:text-[#d8c21d] [&>svg]:w-full [&>svg]:h-full"
-                        set:html={jsIcon}
-                    />
-                    <span
-                        class="text-black font-medium text-xs md:text-sm transition-colors duration-300 group-hover/icon:text-[#d8c21d]"
-                        >JS</span
-                    >
-                </div>
-                <!-- React -->
-                <div class="flex flex-col items-center gap-2 group/icon">
-                    <div
-                        class="w-10 h-10 md:w-16 md:h-16 flex-shrink-0 text-black transition-colors duration-300 hover:text-[#61DAFB] [&>svg]:w-full [&>svg]:h-full"
-                        set:html={reactIcon}
-                    />
-                    <span
-                        class="text-black font-medium text-xs md:text-sm transition-colors duration-300 group-hover/icon:text-[#61DAFB]"
-                        >React</span
-                    >
-                </div>
-                <!-- Figma -->
-                <div class="flex flex-col items-center gap-2 group/icon">
-                    <div
-                        class="w-10 h-10 md:w-16 md:h-16 flex-shrink-0 text-black transition-colors duration-300 hover:text-[#F24E1E] [&>svg]:w-full [&>svg]:h-full"
-                        set:html={figmaIcon}
-                    />
-                    <span
-                        class="text-black font-medium text-xs md:text-sm transition-colors duration-300 group-hover/icon:text-[#F24E1E]"
-                        >Figma</span
-                    >
-                </div>
-                <!-- Tailwind -->
-                <div class="flex flex-col items-center gap-2 group/icon">
-                    <div
-                        class="w-10 h-10 md:w-16 md:h-16 flex-shrink-0 text-black transition-colors duration-300 hover:text-[#06B6D4] [&>svg]:w-full [&>svg]:h-full"
-                        set:html={tailwindIcon}
-                    />
-                    <span
-                        class="text-black font-medium text-xs md:text-sm transition-colors duration-300 group-hover/icon:text-[#06B6D4]"
-                        >Tailwind</span
-                    >
-                </div>
-            </div>
+      <!-- Active View (Hidden by default) -->
+      <div
+        class="skill-active hidden bg-bg-off-white rounded-[40px] w-full px-4 md:px-[50px] py-2 md:py-[30px] grid grid-cols-3 md:grid-cols-6 items-center justify-evenly gap-4 md:gap-8 transition-all duration-300"
+      >
+        <!-- Express -->
+        <div class="flex flex-col items-center gap-2 group/icon">
+          <div
+            class="w-10 h-10 md:w-16 md:h-16 flex-shrink-0 text-black transition-colors duration-300 hover:text-[#000000] [&>svg]:w-full [&>svg]:h-full"
+            set:html={expressIcon}
+          />
+          <span
+            class="text-black font-medium text-xs md:text-sm transition-colors duration-300 group-hover/icon:text-[#000000]"
+            >Express</span
+          >
         </div>
-
-        <!-- Backend (Center) -->
-        <div
-            id="backend-skill"
-            class="flex justify-center w-full animate-slide-in-fall cursor-pointer group hover:bg-accent-light rounded-[40px] transition-all duration-300"
-        >
-            <!-- Default View -->
-            <div
-                class="skill-default bg-transparent border-2 border-transparent px-4 md:px-[50px] py-2 md:py-[30px] flex items-center transition-all duration-300"
-            >
-                <p
-                    class="font-pilcrow text-[24px] md:text-[60px] text-bg-off-white leading-normal"
-                >
-                    {t["skills.backend"]}
-                </p>
-            </div>
-
-            <!-- Active View (Hidden by default) -->
-            <div
-                class="skill-active hidden bg-bg-off-white rounded-[40px] w-full px-4 md:px-[50px] py-2 md:py-[30px] grid grid-cols-3 md:grid-cols-6 items-center justify-evenly gap-4 md:gap-8 transition-all duration-300"
-            >
-                <!-- Express -->
-                <div class="flex flex-col items-center gap-2 group/icon">
-                    <div
-                        class="w-10 h-10 md:w-16 md:h-16 flex-shrink-0 text-black transition-colors duration-300 hover:text-[#000000] [&>svg]:w-full [&>svg]:h-full"
-                        set:html={expressIcon}
-                    />
-                    <span
-                        class="text-black font-medium text-xs md:text-sm transition-colors duration-300 group-hover/icon:text-[#000000]"
-                        >Express</span
-                    >
-                </div>
-                <!-- FastAPI -->
-                <div class="flex flex-col items-center gap-2 group/icon">
-                    <div
-                        class="w-10 h-10 md:w-16 md:h-16 flex-shrink-0 text-black transition-colors duration-300 hover:text-[#009688] [&>svg]:w-full [&>svg]:h-full"
-                        set:html={fastApiIcon}
-                    />
-                    <span
-                        class="text-black font-medium text-xs md:text-sm transition-colors duration-300 group-hover/icon:text-[#009688]"
-                        >FastAPI</span
-                    >
-                </div>
-                <!-- Spring Boot -->
-                <div class="flex flex-col items-center gap-2 group/icon">
-                    <div
-                        class="w-10 h-10 md:w-16 md:h-16 flex-shrink-0 text-black transition-colors duration-300 hover:text-[#6DB33F] [&>svg]:w-full [&>svg]:h-full"
-                        set:html={springIcon}
-                    />
-                    <span
-                        class="text-black font-medium text-xs md:text-sm transition-colors duration-300 group-hover/icon:text-[#6DB33F]"
-                        >Spring Boot</span
-                    >
-                </div>
-                <!-- Postgres -->
-                <div class="flex flex-col items-center gap-2 group/icon">
-                    <div
-                        class="w-10 h-10 md:w-16 md:h-16 flex-shrink-0 text-black transition-colors duration-300 hover:text-[#336791] [&>svg]:w-full [&>svg]:h-full"
-                        set:html={postgresIcon}
-                    />
-                    <span
-                        class="text-black font-medium text-xs md:text-sm transition-colors duration-300 group-hover/icon:text-[#336791]"
-                        >Postgres</span
-                    >
-                </div>
-                <!-- MongoDB -->
-                <div class="flex flex-col items-center gap-2 group/icon">
-                    <div
-                        class="w-10 h-10 md:w-16 md:h-16 flex-shrink-0 text-black transition-colors duration-300 hover:text-[#47A248] [&>svg]:w-full [&>svg]:h-full"
-                        set:html={mongoIcon}
-                    />
-                    <span
-                        class="text-black font-medium text-xs md:text-sm transition-colors duration-300 group-hover/icon:text-[#47A248]"
-                        >MongoDB</span
-                    >
-                </div>
-                <!-- Firebase -->
-                <div class="flex flex-col items-center gap-2 group/icon">
-                    <div
-                        class="w-10 h-10 md:w-16 md:h-16 flex-shrink-0 text-black transition-colors duration-300 hover:text-[#FFCA28] [&>svg]:w-full [&>svg]:h-full"
-                        set:html={firebaseIcon}
-                    />
-                    <span
-                        class="text-black font-medium text-xs md:text-sm transition-colors duration-300 group-hover/icon:text-[#FFCA28]"
-                        >Firebase</span
-                    >
-                </div>
-            </div>
+        <!-- FastAPI -->
+        <div class="flex flex-col items-center gap-2 group/icon">
+          <div
+            class="w-10 h-10 md:w-16 md:h-16 flex-shrink-0 text-black transition-colors duration-300 hover:text-[#009688] [&>svg]:w-full [&>svg]:h-full"
+            set:html={fastApiIcon}
+          />
+          <span
+            class="text-black font-medium text-xs md:text-sm transition-colors duration-300 group-hover/icon:text-[#009688]"
+            >FastAPI</span
+          >
         </div>
-
-        <!-- SoftSkills (Left) -->
-        <div
-            id="softskill-skill"
-            class="flex justify-end w-full animate-slide-in-right cursor-pointer group hover:bg-accent-light rounded-[40px] transition-all duration-300"
-        >
-            <!-- Default View -->
-            <div
-                class="skill-default bg-transparent border-2 border-transparent px-4 md:px-[50px] py-2 md:py-[30px] flex items-center transition-all duration-300"
-            >
-                <p
-                    class="font-pilcrow text-[24px] md:text-[60px] text-bg-off-white leading-normal"
-                >
-                    {t["skills.softskills"]}
-                </p>
-            </div>
-
-            <!-- Active View (Hidden by default) -->
-            <div
-                class="skill-active hidden bg-bg-off-white rounded-[40px] w-full px-4 md:px-[50px] py-2 md:py-[30px] grid grid-cols-3 md:grid-cols-5 items-center justify-evenly gap-4 md:gap-8 transition-all duration-300"
-            >
-                <!-- Brain -->
-                <div class="flex flex-col items-center gap-2 group/icon">
-                    <div
-                        class="w-10 h-10 md:w-16 md:h-16 flex-shrink-0 text-black transition-colors duration-300 hover:text-accent-dark [&>svg]:w-full [&>svg]:h-full"
-                        set:html={brainIcon}
-                    />
-                    <span
-                        class="text-black font-medium text-xs md:text-sm transition-colors duration-300 group-hover/icon:text-accent-dark text-center"
-                    >
-                        {t["softskills.brain"]}</span
-                    >
-                </div>
-                <!-- Paint -->
-                <div class="flex flex-col items-center gap-2 group/icon">
-                    <div
-                        class="w-10 h-10 md:w-16 md:h-16 flex-shrink-0 text-black transition-colors duration-300 hover:text-accent-dark [&>svg]:w-full [&>svg]:h-full"
-                        set:html={paintIcon}
-                    />
-                    <span
-                        class="text-black font-medium text-xs md:text-sm transition-colors duration-300 group-hover/icon:text-accent-dark"
-                    >
-                        {t["softskills.paint"]}</span
-                    >
-                </div>
-                <!-- Puzzle -->
-                <div class="flex flex-col items-center gap-2 group/icon">
-                    <div
-                        class="w-10 h-10 md:w-16 md:h-16 flex-shrink-0 text-black transition-colors duration-300 hover:text-accent-dark [&>svg]:w-full [&>svg]:h-full"
-                        set:html={puzzleIcon}
-                    />
-                    <span
-                        class="text-black font-medium text-xs md:text-sm transition-colors duration-300 group-hover/icon:text-accent-dark"
-                    >
-                        {t["softskills.puzzle"]}</span
-                    >
-                </div>
-                <!-- Social -->
-                <div class="flex flex-col items-center gap-2 group/icon">
-                    <div
-                        class="w-10 h-10 md:w-16 md:h-16 flex-shrink-0 text-black transition-colors duration-300 hover:text-accent-dark [&>svg]:w-full [&>svg]:h-full"
-                        set:html={socialIcon}
-                    />
-                    <span
-                        class="text-black font-medium text-xs md:text-sm transition-colors duration-300 group-hover/icon:text-accent-dark"
-                    >
-                        {t["softskills.social"]}</span
-                    >
-                </div>
-                <!-- Talk -->
-                <div class="flex flex-col items-center gap-2 group/icon">
-                    <div
-                        class="w-10 h-10 md:w-16 md:h-16 flex-shrink-0 text-black transition-colors duration-300 hover:text-accent-dark [&>svg]:w-full [&>svg]:h-full"
-                        set:html={talkIcon}
-                    />
-                    <span
-                        class="text-black font-medium text-xs md:text-sm transition-colors duration-300 group-hover/icon:text-accent-dark"
-                    >
-                        {t["softskills.talk"]}</span
-                    >
-                </div>
-            </div>
+        <!-- Spring Boot -->
+        <div class="flex flex-col items-center gap-2 group/icon">
+          <div
+            class="w-10 h-10 md:w-16 md:h-16 flex-shrink-0 text-black transition-colors duration-300 hover:text-[#6DB33F] [&>svg]:w-full [&>svg]:h-full"
+            set:html={springIcon}
+          />
+          <span
+            class="text-black font-medium text-xs md:text-sm transition-colors duration-300 group-hover/icon:text-[#6DB33F]"
+            >Spring Boot</span
+          >
         </div>
+        <!-- Postgres -->
+        <div class="flex flex-col items-center gap-2 group/icon">
+          <div
+            class="w-10 h-10 md:w-16 md:h-16 flex-shrink-0 text-black transition-colors duration-300 hover:text-[#336791] [&>svg]:w-full [&>svg]:h-full"
+            set:html={postgresIcon}
+          />
+          <span
+            class="text-black font-medium text-xs md:text-sm transition-colors duration-300 group-hover/icon:text-[#336791]"
+            >Postgres</span
+          >
+        </div>
+        <!-- MongoDB -->
+        <div class="flex flex-col items-center gap-2 group/icon">
+          <div
+            class="w-10 h-10 md:w-16 md:h-16 flex-shrink-0 text-black transition-colors duration-300 hover:text-[#47A248] [&>svg]:w-full [&>svg]:h-full"
+            set:html={mongoIcon}
+          />
+          <span
+            class="text-black font-medium text-xs md:text-sm transition-colors duration-300 group-hover/icon:text-[#47A248]"
+            >MongoDB</span
+          >
+        </div>
+        <!-- Firebase -->
+        <div class="flex flex-col items-center gap-2 group/icon">
+          <div
+            class="w-10 h-10 md:w-16 md:h-16 flex-shrink-0 text-black transition-colors duration-300 hover:text-[#FFCA28] [&>svg]:w-full [&>svg]:h-full"
+            set:html={firebaseIcon}
+          />
+          <span
+            class="text-black font-medium text-xs md:text-sm transition-colors duration-300 group-hover/icon:text-[#FFCA28]"
+            >Firebase</span
+          >
+        </div>
+      </div>
     </div>
+
+    <!-- SoftSkills (Left) -->
+    <div
+      id="softskill-skill"
+      class="flex justify-end w-full animate-slide-in-right cursor-pointer group hover:bg-accent-light rounded-[40px] transition-all duration-300"
+    >
+      <!-- Default View -->
+      <div
+        class="md:flex skill-default bg-transparent border-2 border-transparent px-4 md:px-[50px] py-2 md:py-[30px] items-center transition-all duration-300"
+      >
+        <p
+          class="font-pilcrow text-[24px] md:text-[60px] text-bg-off-white leading-normal"
+        >
+          {t["skills.softskills"]}
+        </p>
+      </div>
+
+      <!-- Active View (Hidden by default) -->
+      <div
+        class="skill-active hidden bg-bg-off-white rounded-[40px] w-full px-4 md:px-[50px] py-2 md:py-[30px] grid grid-cols-3 md:grid-cols-5 items-center justify-evenly gap-4 md:gap-8 transition-all duration-300"
+      >
+        <!-- Brain -->
+        <div class="flex flex-col items-center gap-2 group/icon">
+          <div
+            class="w-10 h-10 md:w-16 md:h-16 flex-shrink-0 text-black transition-colors duration-300 hover:text-accent-dark [&>svg]:w-full [&>svg]:h-full"
+            set:html={brainIcon}
+          />
+          <span
+            class="text-black font-medium text-xs md:text-sm transition-colors duration-300 group-hover/icon:text-accent-dark text-center"
+          >
+            {t["softskills.brain"]}</span
+          >
+        </div>
+        <!-- Paint -->
+        <div class="flex flex-col items-center gap-2 group/icon">
+          <div
+            class="w-10 h-10 md:w-16 md:h-16 flex-shrink-0 text-black transition-colors duration-300 hover:text-accent-dark [&>svg]:w-full [&>svg]:h-full"
+            set:html={paintIcon}
+          />
+          <span
+            class="text-black font-medium text-xs md:text-sm transition-colors duration-300 group-hover/icon:text-accent-dark"
+          >
+            {t["softskills.paint"]}</span
+          >
+        </div>
+        <!-- Puzzle -->
+        <div class="flex flex-col items-center gap-2 group/icon">
+          <div
+            class="w-10 h-10 md:w-16 md:h-16 flex-shrink-0 text-black transition-colors duration-300 hover:text-accent-dark [&>svg]:w-full [&>svg]:h-full"
+            set:html={puzzleIcon}
+          />
+          <span
+            class="text-black font-medium text-xs md:text-sm transition-colors duration-300 group-hover/icon:text-accent-dark"
+          >
+            {t["softskills.puzzle"]}</span
+          >
+        </div>
+        <!-- Social -->
+        <div class="flex flex-col items-center gap-2 group/icon">
+          <div
+            class="w-10 h-10 md:w-16 md:h-16 flex-shrink-0 text-black transition-colors duration-300 hover:text-accent-dark [&>svg]:w-full [&>svg]:h-full"
+            set:html={socialIcon}
+          />
+          <span
+            class="text-black font-medium text-xs md:text-sm transition-colors duration-300 group-hover/icon:text-accent-dark"
+          >
+            {t["softskills.social"]}</span
+          >
+        </div>
+        <!-- Talk -->
+        <div class="flex flex-col items-center gap-2 group/icon">
+          <div
+            class="w-10 h-10 md:w-16 md:h-16 flex-shrink-0 text-black transition-colors duration-300 hover:text-accent-dark [&>svg]:w-full [&>svg]:h-full"
+            set:html={talkIcon}
+          />
+          <span
+            class="text-black font-medium text-xs md:text-sm transition-colors duration-300 group-hover/icon:text-accent-dark"
+          >
+            {t["softskills.talk"]}</span
+          >
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
