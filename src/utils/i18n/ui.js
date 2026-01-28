@@ -70,6 +70,7 @@ export const ui = {
     "footer.email": "Email",
     "footer.linkedin": "Linkedin",
     "footer.instagram": "Instagram",
+    "footer.infojobs": "InfoJobs",
     "footer.cv": "CV",
   },
   es: {
@@ -135,6 +136,7 @@ export const ui = {
     "footer.email": "Correo",
     "footer.linkedin": "Linkedin",
     "footer.instagram": "Instagram",
+    "footer.infojobs": "InfoJobs",
     "footer.cv": "CV",
   },
   ca: {
@@ -204,6 +206,7 @@ export const ui = {
     "footer.email": "Correu",
     "footer.linkedin": "Linkedin",
     "footer.instagram": "Instagram",
+    "footer.infojobs": "InfoJobs",
     "footer.cv": "CV",
   },
 };
